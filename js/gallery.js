@@ -9,7 +9,7 @@ var portfolio = [
     skills: ["HTML,", "CSS,", "Git"],
     kind: "Develop"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/develop/project4.jpg",
     lightbox: "img/portfolio/develop/project4.jpg",
@@ -20,7 +20,7 @@ var portfolio = [
     skills: ["HTML,", "CSS,", "Git,", "JavaSctipt,", "Jquery"],
     kind: "Develop"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/develop/project5.jpg",
     lightbox: "img/portfolio/develop/project5.jpg",
@@ -31,7 +31,7 @@ var portfolio = [
     skills: ["HTML,", "CSS,", "Git,", "SASS"],
     kind: "Develop"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/develop/project6.jpg",
     lightbox: "img/portfolio/develop/project6.jpg",
@@ -42,7 +42,7 @@ var portfolio = [
     skills: ["HTML,", "CSS,", "Git"],
     kind: "Develop"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/develop/project7.jpg",
     lightbox: "img/portfolio/develop/project7.jpg",
@@ -53,7 +53,7 @@ var portfolio = [
     skills: ["HTML,", "CSS,", "Git,", "JavaScript,", "Jquery"],
     kind: "Develop"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/develop/project8.jpg",
     lightbox: "img/portfolio/develop/project8.jpg",
@@ -64,7 +64,7 @@ var portfolio = [
     skills: ["HTML,", "CSS,", "Git"],
     kind: "Develop"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/develop/project9.jpg",
     lightbox: "img/portfolio/develop/project9.jpg",
@@ -75,7 +75,7 @@ var portfolio = [
     skills: ["HTML,", "CSS,", "Git,", "SASS,", "JavaScript,", "Jquery"],
     kind: "Develop"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/develop/project10.jpg",
     lightbox: "img/portfolio/develop/project10.jpg",
@@ -86,43 +86,43 @@ var portfolio = [
     skills: ["HTML,", "CSS,", "Git,", "SASS,", "JavaScript,", "Jquery"],
     kind: "Develop"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/campaign/Campaign1.jpg",
+    thumb: "img/portfolio/thumbs/campaign/campaign1.jpg",
     lightbox: "img/portfolio/campaign/Campaign1.jpg",
     title: "EDGE8: Sales Kit",
     caption: "In order for the sales representatives to market EDGE8 more effectively, package design for a new sales kit was created. These kits contain samples of the new product for the sales representatives to interact with customers. Showing them how easy and familiar the technology is compared to Corning's existing product, the sales reps are able to do a small demo with all the products included in the sales kit. The box takes the clean design of the EDGE8 campaign. Each included piece highlights new and improved features and how they benefit the solution as a whole.",
     skills: ["Illustrator"],
     kind: "Campaign"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/campaign/Campaign2.jpg",
+    thumb: "img/portfolio/thumbs/campaign/campaign2.jpg",
     lightbox: "img/portfolio/campaign/Campaign2.jpg",
     title: "EDGE8: Data Center Brochure",
     caption: "To help spread the word of this new solution, a brochure was created to outline how Corning took an existing and already successful solution and combined it with new market knowledge to offer a more efficient solution with improved performance. The brochure shows the advantages customers are already getting from the original EDGE Solution. It also makes the case for a base-8 solution and why the market it drawing future technologies in this direction. The brochure then highlights the new EDGE8 Solution and how customers can expect to get the best qualities from EDGE with the added performance that a base-8 solution can provide.",
     skills: ["InDesign"],
     kind: "Campaign"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/campaign/Campaign3.jpg",
+    thumb: "img/portfolio/thumbs/campaign/campaign3.jpg",
     lightbox: "img/portfolio/campaign/Campaign3.jpg",
     title: "EDGE8: Print Ad Campaign",
     caption: "This campaign started with a teaser ad. The 8 symbol was turned sideways to play off the infinite possibilities that a base-8 solution could provide. Once the solution launched, the 8 was used as a play on words to highlight actions for customers to take to move towards the new EDGE8 Solution.",
     skills: ["InDesign"],
     kind: "Campaign"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/campaign/Campaign4.jpg",
+    thumb: "img/portfolio/thumbs/campaign/campaign4.jpg",
     lightbox: "img/portfolio/campaign/Campaign4.jpg",
     title: "EDGE8: Banner Ad Campaign",
     caption: "A series of banner ads were created to mimic the print ads. These banners were used across Corning portals and program pages to generate interest with already existing customers.",
     skills: ["Photoshop"],
     kind: "Campaign"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/campaign/Campaign5.jpg",
     lightbox: "img/portfolio/campaign/Campaign5.jpg",
@@ -131,7 +131,7 @@ var portfolio = [
     skills: ["InDesign,", "Illustrator"],
     kind: "Campaign"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/campaign/Campaign6.jpg",
     lightbox: "img/portfolio/campaign/Campaign6.jpg",
@@ -140,7 +140,7 @@ var portfolio = [
     skills: ["Illustrator"],
     kind: "Campaign"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/campaign/Campaign7.jpg",
     lightbox: "img/portfolio/campaign/Campaign7.jpg",
@@ -149,7 +149,7 @@ var portfolio = [
     skills: ["Illustrator,", "Photoshop"],
     kind: "Campaign"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/campaign/Campaign8.jpg",
     lightbox: "img/portfolio/campaign/Campaign8.jpg",
@@ -158,7 +158,7 @@ var portfolio = [
     skills: ["InDesign,", "Illustrator"],
     kind: "Campaign"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/campaign/Campaign9.jpg",
     lightbox: "img/portfolio/campaign/Campaign9.jpg",
@@ -167,7 +167,7 @@ var portfolio = [
     skills: ["InDesign"],
     kind: "Campaign"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/campaign/Campaign10.jpg",
     lightbox: "img/portfolio/campaign/Campaign10.jpg",
@@ -176,7 +176,7 @@ var portfolio = [
     skills: ["Illustrator,", "Photoshop"],
     kind: "Campaign"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/campaign/Campaign11.jpg",
     lightbox: "img/portfolio/campaign/Campaign11.jpg",
@@ -185,7 +185,7 @@ var portfolio = [
     skills: ["Illustrator,", "Photoshop"],
     kind: "Campaign"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/campaign/Campaign12.jpg",
     lightbox: "img/portfolio/campaign/Campaign12.jpg",
@@ -194,115 +194,115 @@ var portfolio = [
     skills: ["Illustrator,", "Photoshop"],
     kind: "Campaign"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print1.jpg",
+    thumb: "img/portfolio/thumbs/print/print1.jpg",
     lightbox: "img/portfolio/print/Print1.jpg",
     title: "Print Ads",
     caption: "",
     skills: ["InDesign"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print2.jpg",
+    thumb: "img/portfolio/thumbs/print/print2.jpg",
     lightbox: "img/portfolio/print/Print2.jpg",
     title: "Event Cards",
     caption: "",
     skills: ["InDesign,", "Illustrator"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print3.jpg",
+    thumb: "img/portfolio/thumbs/print/print3.jpg",
     lightbox: "img/portfolio/print/Print3.jpg",
     title: "Whisper Suite Invitation",
     caption: "",
     skills: ["Illustrator"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print4.jpg",
+    thumb: "img/portfolio/thumbs/print/print4.jpg",
     lightbox: "img/portfolio/print/Print4.jpg",
     title: "Harsh Environments Line Diagrams",
     caption: "",
     skills: ["InDesign"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print5.jpg",
+    thumb: "img/portfolio/thumbs/print/print5.jpg",
     lightbox: "img/portfolio/print/Print5.jpg",
     title: "One Pager",
     caption: "",
     skills: ["InDesign,", "Illustrator"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print6.jpg",
+    thumb: "img/portfolio/thumbs/print/print6.jpg",
     lightbox: "img/portfolio/print/Print6.jpg",
     title: "IT Strategy Brochure",
     caption: "",
     skills: ["InDesign"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print7.jpg",
+    thumb: "img/portfolio/thumbs/print/print7.jpg",
     lightbox: "img/portfolio/print/Print7.jpg",
     title: "Hardware Innovations Brochure",
     caption: "",
     skills: ["InDesign"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print8.jpg",
+    thumb: "img/portfolio/thumbs/print/print8.jpg",
     lightbox: "img/portfolio/print/Print8.jpg",
     title: "Commerical Awards Weekend Booklet",
     caption: "",
     skills: ["InDesign"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print9.jpg",
+    thumb: "img/portfolio/thumbs/print/print9.jpg",
     lightbox: "img/portfolio/print/Print9.jpg",
     title: "2015 Core Products Catalog",
     caption: "",
     skills: ["InDesign,", "Illustrator"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print10.jpg",
+    thumb: "img/portfolio/thumbs/print/print10.jpg",
     lightbox: "img/portfolio/print/Print10.jpg",
     title: "2016 Core Products Catalog",
     caption: "",
     skills: ["InDesign,", "Illustrator"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print11.jpg",
+    thumb: "img/portfolio/thumbs/print/print11.jpg",
     lightbox: "img/portfolio/print/Print11.jpg",
     title: "Wedding Invitation",
     caption: "",
     skills: ["InDesign"],
     kind: "Print"
   },
-  
+
   {
-    thumb: "img/portfolio/thumbs/print/Print12.jpg",
+    thumb: "img/portfolio/thumbs/print/print12.jpg",
     lightbox: "img/portfolio/print/Print12.jpg",
     title: "Brand Idenitity",
     caption: "",
     skills: ["Illustrator,", "InDesign"],
     kind: "Print"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/misc/Misc1.jpg",
     lightbox: "img/portfolio/misc/Misc1.jpg",
@@ -311,7 +311,7 @@ var portfolio = [
     skills: ["Illustrator,", "Photoshop"],
     kind: "Misc"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/misc/Misc2.jpg",
     lightbox: "img/portfolio/misc/Misc2.jpg",
@@ -320,7 +320,7 @@ var portfolio = [
     skills: ["Illustrator,", "Photoshop"],
     kind: "Misc"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/misc/Misc3.jpg",
     lightbox: "img/portfolio/misc/Misc3.jpg",
@@ -329,7 +329,7 @@ var portfolio = [
     skills: ["Illustrator"],
     kind: "Misc"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/misc/Misc4.jpg",
     lightbox: "img/portfolio/misc/Misc4.jpg",
@@ -338,7 +338,7 @@ var portfolio = [
     skills: ["Illustrator"],
     kind: "Misc"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/misc/Misc5.jpg",
     lightbox: "img/portfolio/misc/Misc5.jpg",
@@ -347,7 +347,7 @@ var portfolio = [
     skills: ["Illustrator"],
     kind: "Misc"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/misc/Misc6.jpg",
     lightbox: "img/portfolio/misc/Misc6.jpg",
@@ -356,7 +356,7 @@ var portfolio = [
     skills: ["Illustrator,", "InDesign"],
     kind: "Misc"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/misc/Misc7.jpg",
     lightbox: "img/portfolio/misc/Misc7.jpg",
@@ -365,7 +365,7 @@ var portfolio = [
     skills: ["Illustrator"],
     kind: "Misc"
   },
-  
+
   {
     thumb: "img/portfolio/thumbs/misc/Misc8.jpg",
     lightbox: "img/portfolio/misc/Misc8.jpg",
@@ -531,7 +531,7 @@ function updateGallery(sortedArray, galleryLocation) {
       $(galleryLocation).html(block1Content + block2Content +block3Content + block4Content + block5Content + block6Content + block7Content + block8Content + block9Content + block10Content + block11Content + block12Content);
     }
   } // End Get Blocks
-  
+
   //Get the content
   $.each(sortedArray, function(i, portfolio) {
     if(i <= 3) {
@@ -571,7 +571,7 @@ function updateGallery(sortedArray, galleryLocation) {
       galleryContent = '<a rel="portfolio" href="#lightboxContent" class="lightboxContent fancybox" index="' + i + '"><div class="galleryIMG"><img src="' + portfolio.thumb + '" alt="' + portfolio.title + '"></div></a>';
       $("#block12").append(galleryContent);
     }
-  }); // End Get Content 
+  }); // End Get Content
 } // End updateGallery
 
 //Place for the lightbox content to live
@@ -735,7 +735,7 @@ $(document).ready(function() {
     beforeLoad: function() {
                               var itemClicked = $(this).attr("index");
                               var gallery = $(this.element).attr("rel");
-      
+
                               if (gallery == "portfolio") {
                                 itemClicked = itemClicked-4;
                                 if(itemClicked <= -1 || itemClicked >= portfolio.length) {
