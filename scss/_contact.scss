@@ -1,0 +1,47 @@
+#contact .section-content {
+  p {
+    @include text($allFont, 0.9em, black, $regFont);
+  }
+  
+  @include tablet {
+    @include flexbox(flex, space-between, flex-start, nowrap);
+  }
+  
+  div {
+    @include tablet {
+      width: 48%;
+    }
+  }
+}
+
+.email {
+  display: block;
+  text-align: center;
+  @include text($allFont, 1em, $hue, $regFont);
+  text-decoration: none;
+  padding: 0.5em 0;
+  @include tablet {
+    text-align: left;
+  }
+  
+  &:hover {
+      color: rgba(117, 151, 170, 0.7); // tint of $hue
+    }//end email:hover
+}
+
+.social-icon {
+  margin: 0.75em 0 0.25em -3000px;
+  width: 2em;
+  display: inline-block;
+  position: relative;
+}
+
+#mapInsert {
+  width: 100%;
+  height: 10em;
+  @include tablet {
+    width: 48%;
+    height: 15em;
+    margin-top: -3.25em;
+  }
+}

@@ -1,0 +1,158 @@
+.jumptarget::before {
+  margin: 0;
+}
+
+#skills {  
+  h3 {
+    left: 0.8em;
+  }
+  @include tablet {
+    background-color: rgba(0, 0, 0, 0.08);
+    margin-bottom: -0.5em;
+  }
+  
+  .section-header {
+    max-width: 1024px;
+    padding: 0 0.5em;
+  }
+}
+
+.skill-icons {
+  padding: 1em 0.5em;
+  background-color: rgba(0, 0, 0, 0.08);
+  @include flexbox(flex, space-between, flex-start, wrap);
+  @include tablet {
+    width: 30%;
+    background: none;
+  }
+  
+  img {
+    width: 45%;
+    @include tablet {
+      width: 65%;
+      order: 1;
+      margin: 0 auto 1em;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+    }
+    @include desktop {
+      width: 50%;
+    }
+  }
+  
+  div {
+    width: 50%;
+    @include tablet {
+      width: 100%;
+      order: 2;
+    }
+    
+    h6 {
+      @include text($allFont, 1em, black, $semibFont);
+      line-height: 1.5em;
+      @include tablet {
+        text-align: center;
+      }
+    }
+    
+    p {
+      @include text($allFont, 0.9em, black, $regFont);
+      @include tablet {
+        text-align: center;
+      }
+    }
+  }
+}
+
+#skillsContent {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  @include tablet {
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 0 0.5em 3em;
+  }
+  
+  .wrapper {
+    margin: 0 auto;    
+    @include tablet {
+      @include flexbox(flex, space-between, stretch, nowrap);
+    }
+  }
+}
+
+#concept,
+#design,
+#develop {
+  margin-left: 2000px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slide-in {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes slide-in {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+  
+@-ms-keyframes slide-in {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  display: contents;
+  animation: slide-in 1.5s;
+    -webkit-animation: slide-in 2s;
+    -moz-animation: slide-in 2s;
+    -o-animation: slide-in 2s;
+    -ms-animation: slide-in 2s;
+}
+
+.delay1 {
+  animation-delay: 0.5s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+#design {
+  background: none;
+}
