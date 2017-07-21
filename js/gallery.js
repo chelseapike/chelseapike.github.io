@@ -286,7 +286,7 @@ var portfolio = [
   },
 
   {
-    thumb: "img/portfolio/thumbs/print/print11.jpg",
+    thumb: "img/portfolio/thumbs/print/Print11.jpg",
     lightbox: "img/portfolio/print/Print11.jpg",
     title: "Wedding Invitation",
     caption: "",
@@ -295,7 +295,7 @@ var portfolio = [
   },
 
   {
-    thumb: "img/portfolio/thumbs/print/print12.jpg",
+    thumb: "img/portfolio/thumbs/print/Print12.jpg",
     lightbox: "img/portfolio/print/Print12.jpg",
     title: "Brand Idenitity",
     caption: "",
