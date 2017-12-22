@@ -764,7 +764,7 @@ $(document).ready(function() {
                                 } else {
                                   lightboxContent(itemClicked, campaignUpdate);
                                 }
-                              } else if (gallery == "miscCampaign") {
+                              } else if (gallery == "portfolioMisc") {
                                 itemClicked = itemClicked-1;
                                 if(itemClicked == -1 || itemClicked >= miscUpdate.length) {
                                   $.fancybox.close();
