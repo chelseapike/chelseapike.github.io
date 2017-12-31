@@ -364,23 +364,6 @@ nav {
         align-items: stretch;
         flex-wrap: nowrap; } }
 
-#concept,
-#design,
-#develop {
-  margin-left: 2000px; }
-
-@keyframes slide-in {
-  0% {
-    transform: translateX(2000px); }
-  100% {
-    visibility: visible;
-    transform: translateX(0); } }
-@-webkit-keyframes slide-in {
-  0% {
-    transform: translateX(2000px); }
-  100% {
-    visibility: visible;
-    transform: translateX(0); } }
 @-moz-keyframes slide-in {
   0% {
     transform: translateX(2000px); }

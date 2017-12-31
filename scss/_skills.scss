@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-#skills {  
+#skills {
   h3 {
     left: 0.8em;
   }
@@ -10,7 +10,7 @@
     background-color: rgba(0, 0, 0, 0.08);
     margin-bottom: -0.5em;
   }
-  
+
   .section-header {
     max-width: 1024px;
     padding: 0 0.5em;
@@ -25,7 +25,7 @@
     width: 30%;
     background: none;
   }
-  
+
   img {
     width: 45%;
     @include tablet {
@@ -39,14 +39,14 @@
       width: 50%;
     }
   }
-  
+
   div {
     width: 50%;
     @include tablet {
       width: 100%;
       order: 2;
     }
-    
+
     h6 {
       @include text($allFont, 1em, black, $semibFont);
       line-height: 1.5em;
@@ -54,7 +54,7 @@
         text-align: center;
       }
     }
-    
+
     p {
       @include text($allFont, 0.9em, black, $regFont);
       @include tablet {
@@ -72,38 +72,12 @@
     background-color: rgba(0, 0, 0, 0.08);
     padding: 0 0.5em 3em;
   }
-  
+
   .wrapper {
-    margin: 0 auto;    
+    margin: 0 auto;
     @include tablet {
       @include flexbox(flex, space-between, stretch, nowrap);
     }
-  }
-}
-
-#concept,
-#design,
-#develop {
-  margin-left: 2000px;
-}
-
-@keyframes slide-in {
-  0% {
-    transform: translateX(2000px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes slide-in {
-  0% {
-    transform: translateX(2000px);
-  }
-  100% {
-    visibility: visible;
-    transform: translateX(0);
   }
 }
 
@@ -126,7 +100,7 @@
     transform: translateX(0);
   }
 }
-  
+
 @-ms-keyframes slide-in {
   0% {
     transform: translateX(2000px);
