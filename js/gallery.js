@@ -3,7 +3,7 @@ var portfolio = [
     thumb: "img/portfolio/thumbs/develop/project3.jpg",
     lightbox: "img/portfolio/develop/project3.jpg",
     title: "Online Registration Form",
-    caption: 'In this project you will build a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes. Using the supplied mockup files you will build a mobile and desktop version of the form using media queries, and a "mobile-first" approach.',
+    caption: 'This project features a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes. Using supplied mockup files, a mobile and desktop version of the form was built using a "mobile-first" approach.',
     githubLink: "https://github.com/chelseaclay/Project3_OnlineRegistrationForm",
     liveLink: "https://chelseaclay.github.io/Project3_OnlineRegistrationForm",
     kind: "Develop"
@@ -13,7 +13,7 @@ var portfolio = [
     thumb: "img/portfolio/thumbs/develop/project7.jpg",
     lightbox: "img/portfolio/develop/project7.jpg",
     title: "Interactive Video Player",
-    caption: "In this project, you'll build an HTML5 video player using JavaScript and the HTML5 Video API. Using the supplied mockups, video files, and transcript, you'll build an interactive video player that synchronizes the video and the transcript. The transcript should be placed below the video, and should highlight as the video progresses. When a user clicks any part of the transcript it should take them to the appropriate place in the video.",
+    caption: "This project features an HTML5 video player using JavaScript and the HTML5 Video API. Using the supplied mockups, video files, and transcript, I build an interactive video player that synchronizes the video and the transcript. The transcript is placed below the video and highlights as the video progresses. When a user clicks any part of the transcript it takes them to the appropriate place in the video.",
     githubLink: "https://github.com/chelseaclay/Project7_InteractiveVideoPlayer",
     liveLink: "https://chelseaclay.github.io/Project7_InteractiveVideoPlayer/",
     kind: "Develop"
@@ -23,7 +23,7 @@ var portfolio = [
     thumb: "img/portfolio/thumbs/develop/project9.jpg",
     lightbox: "img/portfolio/develop/project9.jpg",
     title: "Web App Dashboard",
-    caption: 'Many websites do more than just give you information. Sites like GitHub, Zillow, Mint and Treehouse let users do things. They act like programs you run on your computer. These web applications, often include pages for looking at your profile, what you have done in the week or what you need to get done. These "dashboards" act like your control panel for controlling the web app. In this project, you will take a mockup and a few icons and build a beautiful, web dashboard complete with JavaScript-driven charts and graphs. You only need to take the design and create the HTML, CSS and JavaScript functionality for this one page -- you do not need to create other pages, or build any backend or database functionality.',
+    caption: 'Many websites do more than just give you information. They let users do things by acting like programs you run on your computer. These "dashboards" act like your control panel for controlling the web app. In this project, I took a mockup and a few icons to build a beautiful web dashboard complete with JavaScript-driven charts and graphs.  Only the first page has been built. Backend or database functionality has not been assigned. ',
     githubLink: "https://github.com/chelseaclay/Project9_Web_App_Dashboard",
     liveLink: "https://chelseaclay.github.io/Project9_Web_App_Dashboard/",
     kind: "Develop"
@@ -33,7 +33,7 @@ var portfolio = [
     thumb: "img/portfolio/thumbs/develop/project10.jpg",
     lightbox: "img/portfolio/develop/project10.jpg",
     title: "Public API Search",
-    caption: "Communicating with APIs allows you to work with microservices and with vast databases to build useful tools and relevant information quickly and easily. You can build utilities, games, infographics, and more. You can also integrate, display, and analyze social media and large data sets without having to create and curate them yourself. Use at least 1 of the supplied APIs to grab data from at least 6 items from that API. For example, 6 books on Open Library, or 6 movies from the Open Movie Database. Display these items on a page in an attractive gallery of images or titles. Clicking the image or title, opens a lightbox just as in the Interactive Lightbox project earlier with detailed information about the item.",
+    caption: "Communicating with APIs allows you to work with microservices and with vast databases to build useful tools and relevant information quickly and easily. Using the iTunes API, I am able to extract data based on a user&#39;s search and parameters. I am able to make multiple calls to the API in order to dive deeper into the information to show more relevant material to the user&#39;s request.",
     githubLink: "https://github.com/chelseaclay/Project10_Public_API_Search",
     liveLink: "https://chelseaclay.github.io/Project10_Public_API_Search/",
     kind: "Develop"
@@ -43,7 +43,7 @@ var portfolio = [
     thumb: "img/portfolio/thumbs/develop/FSJS_project4.jpg",
     lightbox: "img/portfolio/develop/FSJS_project4.jpg",
     title: "Tic-Tac-Toe",
-    caption: "In this project, you'll build a functional, two-person Tic Tac Toe game. You'll use the provided mockups, HTML, CSS and image files to create a game that requires players to add their names, take turns adding an X or O to the game board, and announce when the game ends. You'll need to keep track of the state of the game -- whose turn it is, where the X's and O's are on the board, and whether the game is a draw or, if not, who won and lost. You'll use your knowledge of JavaScript data structures like arrays and objects as well as DOM-manipulation using jQuery or plain JavaScript to complete this project. And, to ensure that you're using good programming practices, you’ll use the module pattern to create your Tic-Tac-Toe game.",
+    caption: "This is a functional, two-person Tic Tac Toe game built in JavaScript. Using the provided mockups, HTML, CSS and image files, I created a game that requires players to add their names, take turns adding an X or O to the game board, and announce when the game ends. As a good programming practice, I&#39;ve used the module pattern to create the game.",
     githubLink: "https://github.com/chelseaclay/FSJS_Project4_TicTacToe",
     liveLink: "http://chelseaclay.com/FSJS_Project4_TicTacToe/",
     kind: "Develop"
@@ -53,7 +53,7 @@ var portfolio = [
     thumb: "img/portfolio/thumbs/develop/FSJS_project7.jpg",
     lightbox: "img/portfolio/develop/FSJS_project7.jpg",
     title: "Twitter Interface",
-    caption: "Many existing services like Twitter, Facebook, Google Maps, Paypal, and Github allow you to leverage their code in your own applications by talking to their APIs. Using Node to connect to 3rd party APIs provides much greater control than using just AJAX. Server-side communication with APIs offers many more options and greater access to data, but it also require stricter authentication methods. In this project, you'll use Twitter’s REST API to access your Twitter profile information and render it to a user. The page should automatically authenticate access to your Twitter profile. It should use this access to populate three columns on your page: your 5 most recent tweet, your 5 most recent friends, and your 5 most recent private messages.",
+    caption: "Many existing services like Twitter, Facebook, Google Maps, Paypal, and Github allow you to leverage their code in your own applications by talking to their APIs. Using Node to connect to third party APIs provides much greater control than using just AJAX. Server-side communication with APIs offers many more options and greater access to data, but it also require stricter authentication methods. In this project, I&#39;ve used Twitter&#39;s REST API to access a user&#39;s Twitter profile information and render it back to them. The page automatically authenticates access to the user&#39;s Twitter profile. It uses this access to populate three columns on the page: user&#39;s 5 most recent tweets, user&#39;s 5 most recent friends, and user&#39;s 5 most recent private messages.",
     githubLink: "https://github.com/chelseaclay/FSJS_Project7_TwitterInterface",
     kind: "Develop"
   },
@@ -62,7 +62,7 @@ var portfolio = [
     thumb: "img/portfolio/thumbs/develop/FSJS_project9.jpg",
     lightbox: "img/portfolio/develop/FSJS_project9.jpg",
     title: "Single Page App",
-    caption: "In this project, you’ll create a recipe book single page application (SPA) using AngularJS. To complete the project, you’ll use your knowledge of AngularJS to create controllers, update the provided HTML templates with ng attributes, and create a service that calls into the provided Node.js REST API. Your application will include two screens: a screen that displays a list of recipes and a detail screen that allows the user to add or edit recipes.",
+    caption: "This is a recipe book single page application using AngularJS.  I&#39;ve used AngularJS to create controllers, update the provided HTML templates with ng attributes, and create a service that calls into the provided Node.js REST API. The application includes two screens: a screen that displays a list of recipes and a detail screen that allows the user to add or edit recipes.",
     githubLink: "https://github.com/chelseaclay/FSJS_Project9_SinglePageApp",
     kind: "Develop"
   },
@@ -71,7 +71,7 @@ var portfolio = [
     thumb: "img/portfolio/thumbs/develop/FSJS_project10.jpg",
     lightbox: "img/portfolio/develop/FSJS_project10.jpg",
     title: "Library Manager",
-    caption: "You've been tasked with creating a library management system for a small library. The librarian has been using a simple sqlite database and has been entering data in manually. The librarian wants a more intuitive way to handle the library's books, patrons and loans. You'll be given static HTML designs, a set of requirements and the existing SQLite database. You'll be required to implement a dynamic website using Express, Pug, and the SQL ORM Sequelize.",
+    caption: "This project features the creation of a library management system for a small library. Instead of manually entering data, this project give a more  intuitive way to handle the library's books, patrons and loans. Given static HTML designs, a set of requirements and the existing SQLite database, I&#39;ve implement a dynamic website using Express, Pug, and the SQL ORM Sequelize.",
     githubLink: "https://github.com/chelseaclay/FSJS_Project10_LibraryManager",
     kind: "Develop"
   },
