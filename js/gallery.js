@@ -173,65 +173,9 @@ var portfolio = [
   },
 
   {
-    thumb: "img/portfolio/thumbs/print/print1.jpg",
-    lightbox: "img/portfolio/print/Print1.jpg",
-    title: "Print Ads",
-    caption: "",
-    kind: "Print"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/print/print2.jpg",
-    lightbox: "img/portfolio/print/Print2.jpg",
-    title: "Event Cards",
-    caption: "",
-    kind: "Print"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/print/print3.jpg",
-    lightbox: "img/portfolio/print/Print3.jpg",
-    title: "Whisper Suite Invitation",
-    caption: "",
-    kind: "Print"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/print/print4.jpg",
-    lightbox: "img/portfolio/print/Print4.jpg",
-    title: "Harsh Environments Line Diagrams",
-    caption: "",
-    kind: "Print"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/print/print5.jpg",
-    lightbox: "img/portfolio/print/Print5.jpg",
-    title: "One Pager",
-    caption: "",
-    kind: "Print"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/print/print6.jpg",
-    lightbox: "img/portfolio/print/Print6.jpg",
-    title: "IT Strategy Brochure",
-    caption: "",
-    kind: "Print"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/print/print7.jpg",
-    lightbox: "img/portfolio/print/Print7.jpg",
-    title: "Hardware Innovations Brochure",
-    caption: "",
-    kind: "Print"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/print/print8.jpg",
-    lightbox: "img/portfolio/print/Print8.jpg",
-    title: "Commerical Awards Weekend Booklet",
+    thumb: "img/portfolio/thumbs/print/print10.jpg",
+    lightbox: "img/portfolio/print/Print10.jpg",
+    title: "2016 Core Products Catalog",
     caption: "",
     kind: "Print"
   },
@@ -245,9 +189,41 @@ var portfolio = [
   },
 
   {
-    thumb: "img/portfolio/thumbs/print/print10.jpg",
-    lightbox: "img/portfolio/print/Print10.jpg",
-    title: "2016 Core Products Catalog",
+    thumb: "img/portfolio/thumbs/print/print1.jpg",
+    lightbox: "img/portfolio/print/Print1.jpg",
+    title: "Print Ads",
+    caption: "",
+    kind: "Print"
+  },
+
+  {
+    thumb: "img/portfolio/thumbs/print/print13.jpg",
+    lightbox: "img/portfolio/print/Print13.jpg",
+    title: "Event Cards",
+    caption: "",
+    kind: "Print"
+  },
+
+  {
+    thumb: "img/portfolio/thumbs/print/print14.jpg",
+    lightbox: "img/portfolio/print/Print14.jpg",
+    title: "White Paper",
+    caption: "",
+    kind: "Print"
+  },
+
+  {
+    thumb: "img/portfolio/thumbs/print/print7.jpg",
+    lightbox: "img/portfolio/print/Print7.jpg",
+    title: "Hardware Innovations Brochure",
+    caption: "",
+    kind: "Print"
+  },
+
+  {
+    thumb: "img/portfolio/thumbs/print/print5.jpg",
+    lightbox: "img/portfolio/print/Print5.jpg",
+    title: "One Pager",
     caption: "",
     kind: "Print"
   },
@@ -261,57 +237,49 @@ var portfolio = [
   },
 
   {
-    thumb: "img/portfolio/thumbs/print/Print12.jpg",
-    lightbox: "img/portfolio/print/Print12.jpg",
-    title: "Brand Idenitity",
+    thumb: "img/portfolio/thumbs/misc/Misc11.jpg",
+    lightbox: "img/portfolio/misc/Misc11.jpg",
+    title: "BICSI 2018",
     caption: "",
-    kind: "Print"
+    kind: "Misc"
   },
 
   {
-    thumb: "img/portfolio/thumbs/misc/Misc1.jpg",
-    lightbox: "img/portfolio/misc/Misc1.jpg",
+    thumb: "img/portfolio/thumbs/misc/Misc10.jpg",
+    lightbox: "img/portfolio/misc/Misc10.jpg",
+    title: "Data Center World UK",
+    caption: "",
+    kind: "Misc"
+  },
+
+  {
+    thumb: "img/portfolio/thumbs/misc/Misc13.jpg",
+    lightbox: "img/portfolio/misc/Misc13.jpg",
+    title: "CPI Experience Center Showroom",
+    caption: "",
+    kind: "Misc"
+  },
+
+  {
+    thumb: "img/portfolio/thumbs/misc/Misc9.jpg",
+    lightbox: "img/portfolio/misc/Misc9.jpg",
+    title: "Email Design",
+    caption: "",
+    kind: "Misc"
+  },
+
+  {
+    thumb: "img/portfolio/thumbs/misc/Misc14.jpg",
+    lightbox: "img/portfolio/misc/Misc14.jpg",
     title: "Web Assets",
     caption: "",
     kind: "Misc"
   },
 
   {
-    thumb: "img/portfolio/thumbs/misc/Misc2.jpg",
-    lightbox: "img/portfolio/misc/Misc2.jpg",
-    title: "Email Assets",
-    caption: "",
-    kind: "Misc"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/misc/Misc3.jpg",
-    lightbox: "img/portfolio/misc/Misc3.jpg",
-    title: "Data Center World Asia Trade Show Booth",
-    caption: "",
-    kind: "Misc"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/misc/Misc4.jpg",
-    lightbox: "img/portfolio/misc/Misc4.jpg",
-    title: "2016 Sähkö Tele Valo Trade Show Booth",
-    caption: "",
-    kind: "Misc"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/misc/Misc5.jpg",
-    lightbox: "img/portfolio/misc/Misc5.jpg",
-    title: "Data Center Crate Booth",
-    caption: "",
-    kind: "Misc"
-  },
-
-  {
-    thumb: "img/portfolio/thumbs/misc/Misc6.jpg",
-    lightbox: "img/portfolio/misc/Misc6.jpg",
-    title: "Product Display Van Graphics",
+    thumb: "img/portfolio/thumbs/misc/Misc12.jpg",
+    lightbox: "img/portfolio/misc/Misc12.jpg",
+    title: "Logos and Graphics",
     caption: "",
     kind: "Misc"
   },
