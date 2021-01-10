@@ -1,46 +1,55 @@
-#about {
-  @include tablet{
-    margin-bottom: 2em;
+#aboutSection {
+  padding: 0 20px 30px;
+  scroll-margin-top: -16em;
+
+  @include tablet {
+    scroll-margin-top: 10em;
   }
-  
-  .section-header {
-    @include tablet{
-      width: 47%;
-      margin-right: 0.5em;
+
+  @include desktop {
+    scroll-margin-top: 18em;
+  }
+
+  @include desktop {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  #profiileImg {
+    background-color: #000000;
+    background-image: url('../img/ChelseaPike_sm.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70%;
+    height: 320px;
+    margin-top: -200px;
+    z-index: 1;
+    position: relative;
+
+    @include tablet {
+      width: 49%;
+      height: 42em;
+      display: inline-block;
+      background-image: url('../img/ChelseaPike.jpg');
+    }
+
+  }
+
+  >div {
+    width: 100%;
+
+    @include tablet {
+      width: 50%;
+      display: inline-block;
+      padding-left: 20px;
     }
   }
 
-  .section-content {
-    margin-bottom: 5em;
-    
-    @include tablet{
-      @include flexbox(flex, space-between, flex-start, wrap);
-      }
-  
-    .about-photo {
-      background-color: gray;
-      background: url(../img/me_sm.jpg) no-repeat top;
-      background-size: cover;
-      width: 100%;
-      height: 10em;
-      @include tablet {
-        background: url(../img/me_med.jpg) no-repeat top;
-        height: 20em;
-        width: 48%;
-        margin-top: -3.25em;
-        margin-left: -0.5em;
-      }
-      @include desktop {
-        background: url(../img/me_lg.jpg) no-repeat top;  
-      }
-    }
-    
-    p {
-      @include text($allFont, 0.9em, black, $regFont);
-      margin-top: 0.5em;
-      @include tablet{
-        width: 48%;
-      }
-    }
-} //end .section-content
-} //end #about
+  .headline {
+    margin-top: 0.25em;
+  }
+  .bodyCopy {
+    margin-top: 1em;
+  }
+}

@@ -2,8 +2,8 @@ var googleAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnKqZGcLydnhj
 
 function initMap() {
   var hickory = {lat: 35.2271, lng: -80.8431};
-  var map = new google.maps.Map(document.getElementById('mapInsert'), {
-    zoom: 9,
+  var map = new google.maps.Map(document.getElementById('googleMap'), {
+    zoom: 10,
     center: hickory,
     gestureHandling: "cooperative",
     scrollwheel: false,

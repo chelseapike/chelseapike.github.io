@@ -1,47 +1,90 @@
-#contact .section-content {
-  p {
-    @include text($allFont, 0.9em, black, $regFont);
-  }
-  
+#contactSection {
+  padding: 0 20px 30px;
+  scroll-margin-top: 4em;
+
   @include tablet {
-    @include flexbox(flex, space-between, flex-start, nowrap);
+    @include flexbox(flex, space-between, center, wrap);
+    scroll-margin-top: 5em;
   }
-  
-  div {
+
+  @include desktop {
+    max-width: 1024px;
+    margin: 0 auto;
+    scroll-margin-top: 6em;
+  }
+
+  >div {
+    width: 100%;
+
     @include tablet {
-      width: 48%;
+      width: 50%;
+      padding-right: 20px;
     }
   }
-}
 
-.email {
-  display: block;
-  text-align: center;
-  @include text($allFont, 1em, $hue, $regFont);
-  text-decoration: none;
-  padding: 0.5em 0;
-  @include tablet {
-    text-align: left;
+  .bodyCopy {
+    margin-top: 1em;
   }
-  
-  &:hover {
-      color: rgba(117, 151, 170, 0.7); // tint of $hue
-    }//end email:hover
+
+  #emailAddress {
+    text-decoration: none;
+    @include text($bodyCopyFont, 1em, $bodyCopyFontColor);
+    border-bottom: 1px solid $subheadFontColor;
+
+    &:hover {
+      color:$subheadFontColor;
+    }
+  }
+
+  #googleMap {
+    display: block;
+    width: 100%;
+    height:175px;
+    background-color: #000000;
+
+    @include tablet {
+      width: 49%;
+      height: 375px;
+    }
+  }
+
+  #copyright {
+    padding: 1em 0 0;
+    @include text($bodyCopyFont, 0.85em, $bodyCopyFontColor);
+  }
 }
 
-.social-icon {
-  margin: 0.75em 0 0.25em -3000px;
-  width: 2em;
+#linkedinProfile,
+#githubProfile {
+  text-decoration: none;
+}
+
+#linkedinProfile>div {
   display: inline-block;
-  position: relative;
+  width: 35px;
+  height: 35px;
+  margin: 0.5em 0.35em 0 0;
+  background-image: url(../img/icon-linkedin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    background-image: url(../img/icon-linkedin-f4b527.svg);
+  }
 }
 
-#mapInsert {
-  width: 100%;
-  height: 10em;
-  @include tablet {
-    width: 48%;
-    height: 15em;
-    margin-top: -3.25em;
+#githubProfile>div {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0.5em 0.35em 0 0;
+  background-image: url(../img/icon-github.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    background-image: url(../img/icon-github-f4b527.svg);
   }
 }

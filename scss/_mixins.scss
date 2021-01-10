@@ -1,17 +1,16 @@
-@mixin text($family, $size, $color:null, $weight:null) {
+@mixin text($family, $size, $color:null) {
   font-family: $family;
   font-size: $size;
   color: $color;
-  font-weight: $weight;
 }
-  
+
 @mixin flexbox($display, $justify, $align:null, $wrap:null) {
   display: $display;
   justify-content: $justify;
   align-items: $align;
   flex-wrap: $wrap;
 }
-  
+
 @mixin tablet {
   @media (min-width:738px) {
     @content;

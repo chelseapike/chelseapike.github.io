@@ -1,227 +1,173 @@
-#portfolio .section-content p {
-  @include text($allFont, 0.9em, black, $regFont);
-}
+#portfolioSection {
+  padding: 30px 20px;
+  scroll-margin-top: 3em;
 
+  .bodyCopy {
+    margin-bottom: 0.75em;
+  }
 
-#portfolio .section-content p:nth-of-type(2) {
-  padding-top: 0.5em;
-}
-
-#portfolio-sort {
-  @include flexbox(flex, space-between, center, nowrap);
-  list-style: none;
-  width: 100%;
-  margin: 1em auto;
   @include tablet {
-    width: 55%;
+    scroll-margin-top: 4em;
   }
-  @include desktop {
-    width: 35%;
-  }
-  
-  li {
-    @include text($allFont, 1em, $hue, $semibFont);
-    padding: 0.25em 0.5em;
-    cursor: pointer;
-    
-    &:hover {
-      color: rgba(117, 151, 170, 0.7); // tint of $hue
-    }//end li:hover
-  } //end li
-  
-  li.selected {
-    color: $darker;
-    font-weight: $boldFont;
-  }
-}
 
-#gallery {
-  position: relative;
-  height: 45em;
-  @include tablet {
-    height: 33em;
-  }
-  
   @include desktop {
-    height: 17em;
+    max-width: 1024px;
+    margin: 0 auto;
+    scroll-margin-top: 5.75em;
   }
-  
-  .blocks {
-    display: block;
-    top: 0;
-    left: 0;
+
+  #portfolioLinksDiv {
+    @include flexbox(flex, space-between, center, nowrap);
+    margin-bottom: 20px;
+
     @include tablet {
-      @include flexbox(flex, space-between, flex-start, wrap);
+      justify-content: center;
     }
-    
-    a{
+
+    p {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    a {
+      @include text($subheadFont, 1.5em, $subheadFontColor);
+      font-weight: 400;
+      text-decoration: none;
+
       @include tablet {
-        width: 48%;
-      }
-      @include desktop {
-        width: 23%;
+        padding: 1em 1.75em;
       }
     }
-    
-    div {
-      margin-bottom: 1em;
-      width: 100%;
-      height: 10em;
+  }
+
+  #portfolioWork {
+    @include flexbox(flex, space-around, center, wrap);
+
+    >div.galleryIMG {
+      width: 48%;
+      margin-bottom: 20px;
       overflow: hidden;
       position: relative;
       box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-        -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-      @include tablet {
-        height: 14.28em;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+
+      @include desktop {
+        width: 32%;
       }
     }
-    
-    img {
-      position: absolute;
-      top: -100px;
-      bottom: -100px;
-      left: -100px;
-      right: -100px;
-      margin: auto;
-      max-width: 100%;
-    }
-  } //end #block1 &2
-}
-
-#dotNav {
-  display: block;
-  margin-bottom: 3em;
-  position: relative;
-}
-
-.slick-dots {
-  top: 0;
-  
-  li button:before {
-    background-color: $slate;
-    border-radius: 50%;
-    width: 2em;
-    height: 2em;
   }
-  
-  li button:hover:before {
-    background-color: $hue;
-  }
-    
-  li.slick-active button:before {
-    background-color: $darker !important;
-  }
-}
 
-#overlay {
-  width: 100%;
-  height: 100vh;
-  padding: 1em 0;
-  background-color: rgba(59, 68, 76, 0.75); // tint of $darker
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-} // end overlay
-
-#controls {
-  @include flexbox(flex, space-around, center, nowrap);
-  position: fixed;
-  width: 100%;
-  bottom: 1em;
-
-  #btnPrev,
-  #btnNext {
-    @include text($allFont, 1.1em, $slate, $lightFont);
-    outline: none;
-    border: none;
-    padding: 0.5em 2em;
-    background-color: white;
-    text-align: center;
-    border-radius: 0.25em;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-      -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-      -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-  }//end button
-}
-
-.btnWrapper {
-  position: fixed;
-  
-  #btnExit {
-    position: fixed;
-    top: auto;
-    right: 2%;
-    transform: translateY(-1em);
-    @include text($allFont, 0.9em, $darker, $regFont);
-    outline: none;
-    border: none;
-    padding: 0.2em 0.4em;
-    background-color: white;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-      -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-      -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-  }
-}
-
-#lightboxContent {
-  @include flexbox(flex, space-around, center, wrap);
-  margin: 0 auto;
-  padding: 0.5em;
-  background-color: white;
-  border-radius: 0.25em;
-  overflow-y: auto;
-  overflow-x: hidden;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-      -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-      -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-  
-  ul {
-    @include flexbox(flex, center, center, wrap);
-    width: 100%;
-    margin: 0.5em 0 1em;
-    
-    li {
-      @include text($allFont, 0.9em, $darker, $regFont);
-      list-style: none;
-      margin: 0 0.25em;
-    } //end li
-  } //end ul
-  
-  a {
-    @include text($allFont, 0.8em, $darker, $regFont);
-    padding: 0.5em;
-    margin-right: 0.5em;
+  #loadMore {
+    @include text($subheadFont, 1.05em, $headlineFontColor);
+    font-weight: 300;
+    border-bottom: 1px solid $subheadFontColor;
+    text-transform: lowercase;
     text-decoration: none;
-    border: 0.5px solid $darker;
-    
+    margin-left: auto;
+
     &:hover {
-      color: $hue;
-      border-color: $slate;
-    } //end hover
-  } //end a
-} //end lightbocContent
+      color:$subheadFontColor;
+    }
 
-.lightboxIMG {
-  width: 100%;
-  padding: 1.5em 0;
+    @include tablet {
+      font-size: 1.35em;
+    }
+  }
+
+  .galleryIMG>img{
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+  }
+
+  .galleryIMG:hover .overlay {
+    opacity: 0.8;
+  }
+
+  .text {
+    @include text($subheadFont, 1.5em, $subheadFontColor);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 }
 
-.projectInfo {
-  margin-bottom: 1em;
-  
-  .projectTitle{
-    @include text($allFont, 1.15em, $hue, $semibFont);
-  }
-  
-  .projectDescrip {
-    @include text($allFont, 0.9em, black, $regFont);
-  }
-}
+#popup {
 
-.fancybox-inner {
-  height: auto !important;
+  #popupControls {
+    @include flexbox(flex, space-between, center, nowrap);
+  }
+
+  .JPO_close {
+    padding: 0.35em 0.5em;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    margin: 25px 1em 0.5em 0;
+    text-decoration: none;
+    @include text($bodyCopyFont, 1em, $subheadFontColor);
+
+    &:hover {
+      color:#ffffff;
+    }
+  }
+
+  #popupNext,
+  #popupPrev {
+    padding: 0.35em 0.5em;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    margin: 25px 0 0.5em 1em;
+    text-decoration: none;
+    @include text($bodyCopyFont, 1em, $subheadFontColor);
+
+    &:hover {
+      color:#ffffff;
+    }
+  }
+
+  #popupTitle {
+    width: 85%;
+    display: inline-block;
+    color: #ffffff;
+    margin: 25px 0 0.5em;
+  }
+
+  #popupImageDiv,
+  .popupImage {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+
+    @include tablet {
+      max-width: 700px;
+    }
+
+    @include desktop {
+      max-width: 1000px;
+    }
+
+  }
+
 }
