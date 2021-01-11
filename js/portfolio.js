@@ -72,7 +72,7 @@ var portfolio = [
   },
 
   {
-    thumb: "img/portfolio/thumbs/misc/logos.gif",
+    thumb: "img/portfolio/thumbs/misc/Logos.gif",
     lightbox: ["img/portfolio/misc/Logos/Logos-22.jpg", "img/portfolio/misc/Logos/Logos-23.jpg", "img/portfolio/misc/Logos/Logos-24.jpg", "img/portfolio/misc/Logos/Logos-25.jpg", "img/portfolio/misc/Logos/Logos-26.jpg", "img/portfolio/misc/Logos/Logos-27.jpg", "img/portfolio/misc/Logos/Logos-28.jpg"],
     title: "Logos & Graphics",
     caption: "",
