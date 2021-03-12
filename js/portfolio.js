@@ -26,7 +26,7 @@ var portfolio = [
   {
     thumb: "img/portfolio/thumbs/develop/MarketoLP.jpg",
     lightbox: ["img/portfolio/develop/MarketoLP/MarketoLP-13.jpg", "img/portfolio/develop/MarketoLP/MarketoLP-14.jpg", "img/portfolio/develop/MarketoLP/MarketoLP-15.gif", "img/portfolio/develop/MarketoLP/MarketoLP-16.jpg", "img/portfolio/develop/MarketoLP/MarketoLP-17.jpg"],
-    title: "Marketo Landing Page Template",
+    title: "Landing Page Template",
     caption: "",
     kind: "Develop"
   },
