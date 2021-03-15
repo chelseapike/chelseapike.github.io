@@ -1,5 +1,13 @@
 var portfolio = [
   {
+    thumb: "img/portfolio/thumbs/campaign/ZetaFrame.jpg",
+    lightbox: ["img/portfolio/campaign/ZetaFrame/ZetaFrame-23.jpg","img/portfolio/campaign/ZetaFrame/ZetaFrame-24.jpg","img/portfolio/campaign/ZetaFrame/ZetaFrame-25.jpg","img/portfolio/campaign/ZetaFrame/ZetaFrame-26.jpg","img/portfolio/campaign/ZetaFrame/ZetaFrame-27.jpg","img/portfolio/campaign/ZetaFrame/ZetaFrame-28.jpg","img/portfolio/campaign/ZetaFrame/ZetaFrame-29.jpg","img/portfolio/campaign/ZetaFrame/ZetaFrame-30.jpg"],
+    title: "ZetaFrame Cabinet System",
+    caption: "",
+    kind: "Campaign"
+  },
+
+  {
     thumb: "img/portfolio/thumbs/campaign/Edge8.jpg",
     lightbox: ["img/portfolio/campaign/Edge8/Edge8-03.jpg", "img/portfolio/campaign/Edge8/Edge8-04.jpg", "img/portfolio/campaign/Edge8/Edge8-05.jpg", "img/portfolio/campaign/Edge8/Edge8-06.jpg", "img/portfolio/campaign/Edge8/Edge8-07.jpg", "img/portfolio/campaign/Edge8/Edge8-08.jpg", "img/portfolio/campaign/Edge8/Edge8-09.jpg", "img/portfolio/campaign/Edge8/Edge8-10.jpg", "img/portfolio/campaign/Edge8/Edge8-11.jpg"],
     title: "EDGE8",
@@ -13,6 +21,14 @@ var portfolio = [
     title: "BICSI 2020",
     caption: "",
     kind: "Misc"
+  },
+
+  {
+    thumb: "img/portfolio/thumbs/develop/DigitalExchange.jpg",
+    lightbox: ["img/portfolio/develop/DigitalExchange/DigitalExchange-41.jpg","img/portfolio/develop/DigitalExchange/DigitalExchange-42.jpg","img/portfolio/develop/DigitalExchange/DigitalExchange-43.jpg","img/portfolio/develop/DigitalExchange/DigitalExchange-44.jpg","img/portfolio/develop/DigitalExchange/DigitalExchange-45.jpg","img/portfolio/develop/DigitalExchange/DigitalExchange-46.jpg"],
+    title: "2020 Digital Exchange",
+    caption: "",
+    kind: "Develop"
   },
 
   {
@@ -96,6 +112,14 @@ var portfolio = [
   },
 
   {
+    thumb: "img/portfolio/thumbs/develop/EmailTemplate.gif",
+    lightbox: ["img/portfolio/develop/EmailTemplate/EmailTemplate-32.gif","img/portfolio/develop/EmailTemplate/EmailTemplate-33.jpg","img/portfolio/develop/EmailTemplate/EmailTemplate-34.jpg","img/portfolio/develop/EmailTemplate/EmailTemplate-35.jpg","img/portfolio/develop/EmailTemplate/EmailTemplate-36.jpg","img/portfolio/develop/EmailTemplate/EmailTemplate-37.jpg","img/portfolio/develop/EmailTemplate/EmailTemplate-38.jpg"],
+    title: "Email Template",
+    caption: "",
+    kind: "Develop"
+  },
+
+  {
     thumb: "img/portfolio/thumbs/develop/CorporatePPT.jpg",
     lightbox: ["img/portfolio/develop/CorporatePPT/CorporatePPT-18.jpg", "img/portfolio/develop/CorporatePPT/CorporatePPT-19.jpg", "img/portfolio/develop/CorporatePPT/CorporatePPT-20.jpg", "img/portfolio/develop/CorporatePPT/CorporatePPT-21.jpg", "img/portfolio/develop/CorporatePPT/CorporatePPT-22.jpg"],
     title: "Corporate PowerPoint",
@@ -112,11 +136,11 @@ var portfolio = [
   },
 
   {
-    thumb: "img/portfolio/thumbs/develop/HolidayCard.jpg",
-    lightbox: ["img/portfolio/develop/HolidayCard/Holiday_Card_2018.gif"],
+    thumb: "img/portfolio/thumbs/misc/HolidayCard.jpg",
+    lightbox: ["img/portfolio/misc/HolidayCard/Holiday_Card_2018.gif"],
     title: "Holiday Card",
     caption: "",
-    kind: "Develop"
+    kind: "Misc"
   },
 
   {
