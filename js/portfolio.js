@@ -411,3 +411,33 @@ document.addEventListener('click', function() {
 
   });
 });
+
+
+// Preload portfolio images after the page loads
+$(window).bind("load", function() {
+  var imagesToPreload = new Array();
+
+  //preload thumbnails past 6
+  for (i = 6; i < portfolio.length; i++) {
+    imagesToPreload.push(portfolio[i].thumb);
+  };
+
+  // cycle thrugh portfolio to push lightbox images into imagesToPreload array
+  $.each(portfolio, function(item){
+    $.each(portfolio[item].lightbox, function(i, value) {
+      imagesToPreload.push(value);
+    });
+  });
+
+  // actually preload the images
+  var preloadImages = new Array();
+
+  function preload() {
+    for (i = 0; i < imagesToPreload.length; i++) {
+      preloadImages[i] = new Image()
+      preloadImages[i].src = imagesToPreload[i]
+    }
+  }
+
+  preload();
+});
