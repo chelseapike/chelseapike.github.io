@@ -10,79 +10,260 @@ html {
   scroll-behavior: smooth;
 }
 
-#top {
-  scroll-margin-top: 1em;
+h1,
+.styledH1 {
+  @include text($fontPrimary, 2.25rem, 700, 2.875rem, #000);
+  margin-bottom: 20px;
 
   @include tablet {
-    scroll-margin-top: 4em;
-  }
-
-  @include desktop {
-    scroll-margin-top: 6em;
+    font-size: 4.5rem;
+    line-height: 5.25rem;
   }
 }
 
-#navMenu a {
-  @include text($subheadFont, 1.35em, $headlineFontColor);
-  font-weight: 300;
-  border-bottom: 1px solid $subheadFontColor;
-  text-transform: lowercase;
+h2,
+.styledH2 {
+  @include text($fontPrimary, 3rem, 700, 3rem, #000);
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 3.25rem;
+    line-height: 4rem;
+  }
+}
+
+h3,
+.styledH3 {
+  @include text($fontPrimary, 1.75rem, 600, 2.25rem, #000);
+  margin-bottom: 15px;
+}
+
+h4,
+.styledH4 {
+  @include text($fontSecondary, 1.5rem, 500, 1.875rem, #000);
+  margin-bottom: 15px;
+}
+
+body {
+  @include text($fontSecondary, 1rem, 400, 1.5rem, $colorBody);
+
+  @include tablet {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+a,
+button {
+  @include text($fontSecondary, 1rem, 400, 1rem, $colorBody);
+  text-decoration: none;
+
+  .navLink {
+    @include text($fontSecondary, 1.125rem, 400, 1.75rem);
+  }
+}
+
+button {
+  color: #fff;
+  background-color: $colorDark;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px 50px;
+  white-space: nowrap;
+  border: none;
+  transition: transform 0.3s linear;
+
+  @include laptop {
+    padding: 15px 30px;
+  }
+
+  &::after {
+
+  }
+  
+  svg {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: transform 0.3s, opacity 0.3s linear;
+  }
+  
+  &:hover,
+  &:focus-visible {
+    @include flexbox(center, 8px, center, nowrap);
+    transform: scale(1.1);
+
+    svg {
+      width: auto;
+      height: 12px;
+      opacity: 1;
+      transform: translate(0px, -1px);
+    }
+  }
+
+  &.secondary {
+    background-color: #fff;
+    color: $colorDark;
+    border: 1px solid $colorDark;
+  }
+}
+
+header {
+  padding-top: 80px;
+
+  @include tablet {
+    padding-top: 100px;
+  }
+}
+
+.myContainer {
+  max-width: 1200px;
   margin: 0 auto;
-
-  &:hover {
-    color:$subheadFontColor;
-  }
-
-}
-
-#portfolioLinksDiv p {
-  @include text($subheadFont, 1.05em, $headlineFontColor);
-  font-weight: 300;
-  border-bottom: 1px solid $subheadFontColor;
-  text-transform: lowercase;
-
-  &:hover {
-    color:$subheadFontColor;
-  }
+  width: 100%;
+  padding: 0 10px;
 
   @include tablet {
-    font-size: 1.35em;
+    padding: 0 20px;
   }
 }
 
-.headline {
-  @include text($headlineFont, 4.5em, $headlineFontColor);
+.display--inlineblock {
+  display: inline-block;
 }
 
-.subhead {
-  @include text($subheadFont, 1.75em, $subheadFontColor);
-  font-weight: 300;
-  letter-spacing: 4px;
+.cornerRadius {
+  border-radius: 15px;
 }
 
-.bodyCopy {
-  @include text($bodyCopyFont, 1em, $bodyCopyFontColor);
-  line-height: 1.75em;
+.boxShadow {
+  box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+  -webkit-box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+  -moz-box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+}
 
-  @include tablet {
-    font-size: 1.25em;
+.categoryTag {
+  padding: 3px 12px;
+  position: relative;
+  font-size: 0.9rem;
+
+  p {
+    margin-bottom: 0px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+
+  .categoryTagsBorder {
+    border-radius: 30px;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .categoryTagsBG {
+    border-radius: 30px;
+    background-image: radial-gradient(circle at 60% 100%, rgba(255, 255, 255, 0.75), rgba(154, 160, 149, 0.75));
+    filter: blur(1px);
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
   }
 }
 
-.companyName {
-  @include text($subheadFont, 1.75em, $headlineFontColor);
-  font-weight: 300;
-  letter-spacing: 4px;
+.author {
+  @include flexbox(flex-start, 15px, center, nowrap);
+  width: 100%;
+  img {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .name {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
 }
 
-.employmentLength {
-  @include text($bodyCopyFont, 1em, $bodyCopyFontColor);
+#projectContact {
+  position: relative;
+  padding: 60px 0px 100px;
+
+  .myContainer {
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+      @include flexbox(center, 0px, flex-end, wrap);
+    }
+
+    h2 {
+
+      @include tablet {
+        max-width: 400px;
+      }
+    }
+
+    > p {
+      margin-bottom: 25px;
+    }
+
+    #contactBtnsDiv {
+      width: 100%;
+    }
+  }
+
+  .bgDiv {
+    background-color: $colorDark;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    height: 50%;
+    max-height: 225px;
+
+    @include tablet {
+      height: 32%;
+    }
+  }
 }
 
-.jobTitle {
-  @include text($bodyCopyFont, 1.35em, $subheadFontColor);
+#relatedProjects {
+  position: relative;
 
-  @include tablet {
-    font-size: 1.5em;
+  h2 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .bgDiv {
+    background-color: $colorDark;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    height: 25%;
+
+    @include laptop {
+      height: 50%;
+    }
   }
 }

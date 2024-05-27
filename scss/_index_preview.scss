@@ -1,0 +1,98 @@
+#preview {
+    position: relative;
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+
+    @include laptop {
+        padding-top: 100px;
+    }
+
+    ul {
+        list-style-type: none;
+        @include flexbox(flex-start, 10px 0px, center, wrap);
+        margin: 0px auto 30px;
+        color: #fff;
+
+        @include laptop {
+            margin-bottom: -30px;
+        }
+    
+        li:not(:last-child):after {
+         content: '>';
+         padding: 0 10px;
+        }
+    }
+
+    .previewImgsDiv {
+        @include flexbox(space-between, 10px, flex-end, wrap);
+
+        @include laptop {
+            flex-wrap: nowrap;
+        }
+
+        .previewImg {
+            background-color: gray;
+            width: 30%;
+            flex-grow: 1;
+            height: 100px;
+
+            @include laptop {
+                width: 25%;
+            }
+
+            &.main {
+                width: 60%;
+                flex-grow: 2;
+                height: 150px;
+
+                @include tablet {
+                    width: 40%;
+                }
+
+                @include laptop {
+                    width: 50%;
+                    order: 3;
+                    height: 180px;
+                }
+            }
+        }
+
+        .previewImg:nth-child(1) {
+            order: 3;
+            flex-grow: 0;
+            margin-left: 35%;
+
+            @include tablet {
+                margin-left: 41%;
+            }
+
+            @include laptop {
+                margin-left: 0;
+                order: 1;
+            }
+        }
+
+        .previewImg:nth-child(2) {
+            transform: translateY(30px);
+
+            @include laptop {
+                transform: translateY(0px);
+                order: 2;
+            }
+        }
+    }
+
+    .bgDiv {
+        background-color: $colorDark;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+        height: 75%;
+    }
+}

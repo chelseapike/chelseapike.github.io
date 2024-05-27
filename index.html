@@ -7,271 +7,437 @@
     <title>Chelsea Pike | Designer</title>
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/application.css" />
 
   </head>
 
-  <body id="top">
-  <div id="navContainer">
-    <div id="nav">
-      <a href="#top" id="logo">
-        <img src="img/CP_Logo.svg" alt="Chelsea Pike Logo" />
-      </a>
-      <img src="img/icon-menu.svg" id="navMenuIcon" alt="Menu" />
-      <div id="navMenu">
-        <a href="#aboutSection" class="siteLink">About</a>
-        <a href="#skillsSection" class="siteLink">Skills</a>
-        <a href="#portfolioSection" class="siteLink">Portfolio</a>
-        <a href="#resumeSection" class="siteLink">Resume</a>
-        <a href="#contactSection" class="siteLink">Contact</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="headerImg">
-    <p>
-      designer
-    </p>
-  </div>
-
-  <div id="aboutSection">
-    <div id="profiileImg"></div>
-    <div>
-      <p class="headline">
-        about
-      </p>
-      <p class="subhead">
-        a little introduction
-      </p>
-      <p class="bodyCopy">
-        Diligent and driven creative professional with 7+ years of experience in working on high-level projects within mid-sized teams. I remain good humored and enthusiastic under pressure, including the ability to multitask effectively with minimal supervision. Resourceful and well organized, I am able to assume responsibility. I pride myself on being a quick learner with the ability to adapt to any challenge.
-      </p>
-    </div>
-  </div>
-
-  <div id="skillsSection" >
-    <div id="skillsContainer">
-      <p class="headline">
-        skills
-      </p>
-      <div id="skillsList">
-        <img src="img/icon-concept.svg" id="skillsConceptIcon" class="skillsIcon" alt="Concept icon" />
-        <p class="subhead">
-          concept
-        </p>
-        <p class="bodyCopy">
-          Start from scratch. imagine new ideas to bring strategies to life. Or, breathe new life into existing work.
-        </p>
-        <img src="img/icon-design.svg" id="skillsDesignIcon" class="skillsIcon" alt="Design icon" />
-        <p class="subhead">
-          design
-        </p>
-        <p class="bodyCopy">
-          Execute concepts to their fullest potiential. Let's make beautiful things!
-        </p>
-        <img src="img/icon-develop.svg" id="skillsDevelopoIcon" class="skillsIcon" alt="Develop" />
-        <p class="subhead">
-          develop
-        </p>
-        <p class="bodyCopy">
-          Make it digital! Bring these concepts and designs full circle by implementing them on the web.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="portfolioSection">
-    <p class="headline">
-      portfolio
-    </p>
-    <div id="portfolioLinksDiv">
-      <p id="portfolioSectionAll" class="portfolioLinks selected">All</p>
-      <p id="portfolioSectionCampaign" class="portfolioLinks">Campaign</p>
-      <p id="portfolioSectionDigital" class="portfolioLinks">Digital</p>
-      <p id="portfolioSectionPrint" class="portfolioLinks">Print</p>
-      <p id="portfolioSectionMisc" class="portfolioLinks">Misc</p>
-    </div>
-
-    <div id="portfolioWork">
-    </div>
-
-  </div>
-
-  <div id="resumeSection">
-    <p class="headline">
-      resume
-    </p>
-    <p class="bodyCopy">
-      I've been fortunate to work with some pretty amazing companies. Each experience has taught me something new that I've been able to build upon in my following roles.
-    </p>
-    <div id="resumeJobList">
-      <div class="resumeJobListItem" id="JobListChatsworth">
-        <p class="companyName">
-          Chatsworth Products
-        </p>
-        <div class="jobListing">
-          <p class="employmentLength">
-            JUN 2018 - PRESENT
-          </p>
-          <p class="jobTitle">
-            Creative Graphic Designer
-          </p>
+  <body>
+    <nav>
+      <div class="myContainer scrolled boxShadow">
+        <p>Chelsea Pike</p>
+        <menu>
+          <li>
+            <a class="navLink" href="#about">About</a>
+          </li>
+          <li>
+            <a class="navLink" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="navLink" href="#shout-outs">Shout Outs</a>
+          </li>
+          <li>
+            <a class="navLink" href="#resume">Resume</a>
+          </li>
+        </menu>
+        <div>
+          <button type="button" class="nav" href="#">Let's Connect 
+            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <img id="menu" src="/img/icon-menu.svg">
         </div>
-        <div id="jobDescriptionChatsworth">
-          <div class="jobPosition1">
-            <p class="jobDescription bodyCopy">
-              Serve as the creative lead for the marketing department. Work with the team to conceptualize, create, and deliver a strategic vision for the company. Communicate with external vendors on projects as needed to provide art direction and fulfill requests, while upholding brand guidelines and best practices for consistency. Expand knowledge base by continuing education and researching new trends to keep current and bring fresh ideas to the team.
+      </div>
+    </nav>
+    <main>
+      <header id="header">
+        <div class="myContainer index">
+          <div class="content">
+            <h1><span>Hello, I'm</span>Chelsea Pike</h1>
+            <p class="description">
+              Creative problem solver with expertise in creating beautifully designed experiences.
             </p>
+            <div id="headerCTAs">
+              <button type="button" class="secondary" href="#">Download Resume
+                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button type="button" href="#">Let's Connect
+                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="jobPosition2">
-            <p class="employmentLength">
-              NOV 2017 - JUN 2018
-            </p>
-            <p class="jobTitle">
-              Independent Graphic Designer
-            </p>
-            <p class="jobDescription bodyCopy">
-              Developed and executed concepts in support of the client's business strategies. Rose to the challenge of introducing new creative concepts while maintaining the company's look and feel. Communicated professionally with clients to understand their requirements, then translated their objectives into brand-compliant designs.
-            </p>
+          <img id="headshot" src="/img/ChelseaPike.png">
+        </div>
+        <div class="bgDiv"></div>
+      </header>
+      <section id="preview">
+        <div class="myContainer">
+          <ul>
+            <li>Graphic Design</li>
+            <li>UX/UI Design</li>
+            <li>Web Development</li>
+          </ul>
+          <div class="previewImgsDiv">
+            <img class="previewImg cornerRadius" />
+            <img class="previewImg cornerRadius" />
+            <img class="previewImg cornerRadius main" />
           </div>
         </div>
+        <div class="bgDiv"></div>
+      </section>
+      <section id="about">
+        <div class="myContainer">
+          <div>
+            <h2>About</h2>
+            <div class="calloutsDiv">
+              <p><span class="styledH3">10+ </span>Years of Experience</p>
+              <p><span class="styledH3">7 </span>Various Certificates</p>
+            </div>
+          </div>
+          <div>
+            <h3>Diligent and driven creative professional with experience in working on <span class="display--inlineblock">high-level</span> projects within <span class="display--inlineblock">mid-sized</span> teams.</h3>
+            <p>
+              I remain good humored and enthusiastic under pressure, including the ability to multitask effectively with minimal supervision. Resourceful and well organized, I’m able to assume responsibility. I pride myself on being a quick learner with the ability to adapt to any challenge.
+            </p>
+            <button type="button" href="#">Let's Connect
+              <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="myContainer">
+          <div class="headerDiv">
+            <h2>Portfolio</h2>
+            <p>
+              Supporting clients on a global scale, my current experience has allowed me to work on various types of projects in both the print and digital space. 
+            </p>
+          </div>
+          <div id="portfolioProjects">
+            <a class="project" href="/portfolio/seamlessai-website-redesign.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>UX/UI</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>Development</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+3</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Seamless.AI Website Redesign</h3>
+            </a>
+            <a class="project" href="/portfolio/edge8-solution.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>Product Launch</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+7</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Edge8™ Solution</h3>
+            </a>
+            <a class="project" href="/portfolio/landing-page-optimization.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>UI/Ux</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>Analytics</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+2</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Landing Page Optimization</h3>
+            </a>
+            <a class="project" href="/portfolio/zetaframe-cabinet-system.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>Product Launch</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+7</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>ZetaFrame™ Cabinet System</h3>
+            </a>
+            <a class="project" href="/portfolio/seamlessai-brand-refresh.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>Branding</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>Design</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+2</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Seamless.AI Brand Refresh</h3>
+            </a>
+            <a class="project" href="/portfolio/bicsi-trade-show-booth.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>Large Format</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>Design</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+2</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>BICSI Trade Show Booth</h3>
+            </a>
+            <a class="project" href="/portfolio/digital-exchange.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>Design</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>Development</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+2</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Digital Exchange</h3>
+            </a>
+            <a class="project" href="/portfolio/marketo-webinar-template.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>Design</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>Development</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+1</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Marketo Webinar Template</h3>
+            </a>
+            <a class="project" href="/portfolio/project-signature.html">
+              <div class="imgDiv">
+                <img class="cornerRadius" src="" />
+                <div class="categoryTagsDiv">
+                  <div class="categoryTag">
+                    <p>Design</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>Development</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                  <div class="categoryTag">
+                    <p>+1</p>
+                    <div class="categoryTagsBorder boxShadow"></div>
+                    <div class="categoryTagsBG"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Project Signature</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="shout-outs">
+        <div class="myContainer">
+          <h2>Shout Outs</h2>
+          <div id="sliderDiv">
+            <div class="slide">
+              <img class="logo" src="/img/logos/SeamlessAI_White.svg">
+              <p class="quotemarks">“</p>
+              <h4 class="quote cornerRadius">
+                Chelsea is a very talented designer and creative, who brings multiple skill sets to the marketing team. She took ownership of our development needs, conversion rate optimization, and performs creative execution at a high level. She exceeded expectations in the launch and development of our website and demonstrated amazing leadership and positivity throughout. 
+              </h4>
+              <div class="author">
+                <img src="">
+                <div>
+                  <p class="name">Jonathan Pogact</p>
+                  <p class="title">VP of Marketing</p>
+                </div>
+              </div>
+            </div>
+            <div class="sliderNav">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="resume">
+        <div class="myContainer">
+          <div class="headerDiv">
+            <h2>Resume</h2>
+            <p>I've been fortunate to work with some pretty amazing companies. Each experience has taught me something new that I've been able to build upon in my following roles.</p>
+          </div>
+          <ul>
+            <li>
+              <h3>Seamless.AI</h3>
+              <div class="jobDetails">
+                <div class="positionHeading">
+                  <h4>Lead Web Developer</h4>
+                  <p>Apr 2024 - Present</p>
+                </div>
+                <div class="expandDetails">
+                  <p>
+                    Crafting seamless and responsive user experiences through my proficiency in HTML, CSS, and JavaScript. Taking ownership of our marketing website, I translate content/design concepts into functional code and ensure optimal website performance across various browsers and devices. My commitment to keep up with the latest web technologies and industry best practices highlights my ability to contribute innovative solutions to enhance overall user engagement. With a keen eye for detail, a passion for clean and efficient code, and a track record of delivering high-quality projects within deadlines, I am continuously push to innovate the brand.
+                  </p>
+                  <div class="positionHeading">
+                    <h4>Webflow Front-End Developer</h4>
+                    <p>Jan 2023 - Apr 2024</p>
+                  </div>
+                  <p>
+                    Crafting seamless and responsive user experiences through my proficiency in HTML, CSS, and JavaScript. Taking ownership of our marketing website, I translate content/design concepts into functional code and ensure optimal website performance across various browsers and devices. My commitment to keep up with the latest web technologies and industry best practices highlights my ability to contribute innovative solutions to enhance overall user engagement. With a keen eye for detail, a passion for clean and efficient code, and a track record of delivering high-quality projects within deadlines, I am continuously push to innovate the brand.
+                  </p>
+                  <div class="positionHeading">
+                    <h4>Designer</h4>
+                    <p>Aug 2021 - Jan 2023</p>
+                  </div>
+                  <p>
+                    Translated creative concepts into visually stunning digital assets, by designing direct response-driven ads, engaging landing pages, and other customer facing assets. Developed and maintained a brand style guide to create a coherent and consistent brand experience across all touch points. Collaborating seamlessly with cross-functional teams, I contribute innovative and effective solutions, ensuring the highest quality designs, functionality, and messaging.
+                  </p>
+                </div>
+              </div>
+              <p>></p>
+            </li>
+          </ul>
+          <div id="resumeCTAs">
+            <button type="button" href="#">Full Resume
+              <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div>
 
-      </div>
-      <p class="collapseJobListing" id="toggleJobListingChatsworth">
-        -
-      </p>
-      <hr />
-      <div class="resumeJobListItem" id="JobListPurered">
-        <p class="companyName">
-          PureRED
+          </div>
+        </div>
+      </section>
+      <section id="lets-connect">
+        <div class="myContainer">
+          <h2>Let’s Connect</h2>
+          <p>
+            I'm excited to hear from you and explore the possibilities of working together. Whether you have questions or simply want to connect, please don't hesitate to reach out.
+          </p>
+          <div id="contactBtnsDiv">
+            <button type="button" class="cornerRadius" href="mailto:cpdesign@chelseapike.com">
+              <img src="">
+              <div>
+                <h3>Email</h3>
+                <p>cpdesign@chelseapike.com</p>
+              </div>
+            </button>
+            <button type="button" class="cornerRadius" href="https://www.linkedin.com/in/chelsea-pike">
+              <img src="">
+              <div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/chelsea-pike</p>
+              </div>
+            </button>
+          </div>
+          <div class="bgDiv"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="dark">
+      <div class="myContainer">
+        <div class="footerName"><p>Chelsea Pike</p></div>
+        <ul>
+          <li>
+            <a class="navLink" href="#about">About</a>
+          </li>
+          <li>
+            <a class="navLink" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="navLink" href="#shout-outs">Shout Outs</a>
+          </li>
+          <li>
+            <a class="navLink" href="#resume">Resume</a>
+          </li>
+        </ul>
+        <p class="copyright">
+          © 2024 Chelsea Pike
         </p>
-        <div class="jobListing">
-          <p class="employmentLength">
-            MAR 2017 - JUN 2018
-          </p>
-          <p class="jobTitle">
-            Production Specialist
-          </p>
-        </div>
-        <div id="jobDescriptionPurered">
-          <div class="jobPosition1">
-            <p class="jobDescription bodyCopy">
-              Prepared final press-ready files to specifications for special projects. Made mock-ups and color proofs as requested for review. Took direction from designers to fulfill requests from the client. Worked within LAGO to build pages for store circulars. Frequently made checks to ensure accuracy of submitted information as well as brand standards.
-            </p>
-          </div>
-          <div class="jobPosition2">
-            <p class="employmentLength">
-              MAY 2016 - MAR 2017
-            </p>
-            <p class="jobTitle">
-              Creative Production Specialist Contractor
-            </p>
-            <p class="jobDescription bodyCopy">
-              Prepared final press-ready files based on supplied specifications. Made various versions of supplied artwork print-ready and resolved any artwork issues that arose during production. Made mock-ups and color proofs as requested for client reviews. Upheld brand guidelines and best practices for consistency. Took design intent from designers and applied appropriately to corresponding material.
-            </p>
-          </div>
-        </div>
-
       </div>
-      <p class="collapseJobListing" id="toggleJobListingPurered">
-        -
-      </p>
-      <hr />
-      <div class="resumeJobListItem" id="JobListCorning">
-        <p class="companyName">
-          Corning Optical Communications
-        </p>
-        <div class="jobListing">
-          <p class="employmentLength">
-            FEB 2014 - FEB 2016
-          </p>
-          <p class="jobTitle">
-            Graphic Design Contractor
-          </p>
-        </div>
-        <div id="jobDescriptionCorning">
-          <div class="jobPosition1">
-            <p class="jobDescription bodyCopy">
-              Delivered creative design solutions for projects from conceptual through completion while working within corporate brand guidelines. Worked with external vendors on projects as needed and represented the company in a positive manner. Managed time through departmental project software and worked efficiently to complete all projects within project timelines. Monitored project costs to ensure compliance with established budget parameters and recommended cost reductions where needed.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <p class="collapseJobListing" id="toggleJobListingCorning">
-        -
-      </p>
-      <hr />
-    </div>
-    <div id="resumePDf">
-      <a href="img/ChelseaPike_Resume.pdf" target="_blank" >Full Resume</a>
-    </div>
-  </div>
-
-  <div id="programsBarContainer">
-    <div id="programsBar">
-      <img src="img/adobe-logo@logotyp.us.svg" alt="Adobe logo" />
-      <img src="img/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" />
-      <img src="img/CSS3_logo_and_wordmark.svg" alt="CSS logo" />
-      <img src="img/JavaScript_Logo.png" alt="Javascript logo" />
-      <img src="img/Sass_Logo_Color.svg" alt="Sass logo" />
-      <img src="img/JQuery-Logo.svg" alt="jQuery logo" />
-    </div>
-  </div>
-
-  <div id="contactSection">
-    <div>
-      <p class="headline">
-        contact
-      </p>
-      <p class="subhead">
-        let's connect
-      </p>
-      <p class="bodyCopy">
-        Thank you for your time. Feel free to reach out using the email address linked below or check out my social profiles for a little more insight. References are available upon request.
-      </p>
-      <p class="bodyCopy">
-        Email address:
-        <a id="emailAddress" href="mailto:cpdesign@chelseapike.com?subject=Portfolio - Let's Connect">
-          CPdesign@chelseapike.com
-        </a>
-      </p>
-      <a href="https://www.linkedin.com/in/chelsea-pike/" target="_blank" class="social-icon" id="linkedinProfile">
-        <!-- <img src="img/icon-linkedin.svg" alt="Linkedin Profile" /> -->
-        <div></div>
-      </a>
-      <a href="https://github.com/chelseapike" target="_blank" class="socialIcon" id="githubProfile">
-        <!-- <img src="img/icon-github.svg" alt="GitHub Profile" /> -->
-        <div></div>
-      </a>
-    </div>
-    <div id="googleMap"></div>
-    <p id="copyright">
-      &copy; 2020 Chelsea Pike
-    </p>
-  </div>
-
-  <div id="popup">
-    <div>
-      <div id="popupControls">
-        <button class="JPO_close">X</button>
-        <h2 id="popupTitle">My popup 1</h2>
-        <button id="popupPrev" onclick="popupPrev()" href="javascript:void(0);"><</button>
-        <button id="popupNext" onclick="popupNext()" href="javascript:void(0);">></button>
-      </div>
-      <div id="popupImageDiv">
-      </div>
-    </div>
-  </div>
-
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js" type="text/javascript"></script>
-  <script src="js/styles.js" type="text/javascript"></script>
-  <script src="js/googleMap.js" type="text/javascript"></script>
-  <script src="js/portfolio.js" type="text/javascript"></script>
+    </footer>
   </body>
 </html>

@@ -1,11 +1,11 @@
 {
   "name": "chelseapike.com",
-  "version": "1.0.0",
-  "description": "website revamp",
+  "version": "2.0.0",
+  "description": "Portfolio",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o css"
+    "scss": "sass --watch scss:css"
   },
   "author": "Chelsea Pike",
   "license": "ISC",

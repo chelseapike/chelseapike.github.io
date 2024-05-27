@@ -1,0 +1,235 @@
+#projectHeader {
+    position: relative;
+
+    @include laptop {
+        padding: 50px;
+    }
+
+    .headerBG {
+        background-color: lightblue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 65%;
+        z-index: -2;
+
+        @include tablet {
+            height: 80%;
+        }
+
+        @include laptop {
+            height: 100%;
+        }
+    }
+
+    .myContainer {
+        @include laptop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+    }
+
+    
+    #projectCTAs {
+        width: 100%;
+        @include flexbox(space-between, 10px, $wrap:wrap);
+      
+        @include tablet {
+          flex-wrap: nowrap;
+        }
+      
+        @include laptop {
+          justify-content: flex-start;
+          order: 2;
+        }
+      
+        button {
+          width: 100%;
+          
+          @include laptop {
+            width: auto;
+          }
+        }
+    }
+}
+
+ul.categoryTagsDiv {
+    @include flexbox(flex-start, 10px, center, wrap);
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.projectMainImg {
+    color: gray;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+
+    @include laptop {
+        grid-row: span 2;
+        height: 120%;
+    }
+}
+
+#creativeBreif {
+    padding: 60px 0;
+
+    .myContainer{
+        @include laptop {
+            @include flexbox(space-between, 60px, flex-start, nowrap);
+        }   
+    }
+
+    #projectBrief {
+        @include laptop {
+            width: 70%;
+        }
+    }
+
+    h3:nth-child(1n) {
+        margin-top: 60px;
+    }
+
+    #projectDetails {
+        margin-top: 60px;
+
+        @include tablet {
+            @include flexbox(space-between, 30px, flex-start, nowrap);
+            margin-top: 0px;
+        }
+
+        > div {
+            margin: 0px 0px 30px;
+
+            @include tablet {
+                width: 50%;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    #projectChallenges {
+        @include laptop {
+            width: 50%;
+        }
+    }
+
+    .projectTools {
+        @include flexbox(center, 15px, flex-start, wrap);
+        list-style: none;
+        text-align: center;
+
+        @include laptop {
+            justify-content: flex-start;
+        }
+
+        > li {
+            width: 40%;
+
+            @include tablet {
+                width: 30%;
+            }
+
+            @include laptop {
+                width: 22%;
+            }
+        }
+    }
+
+    .projectToolsIcon {
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+        flex-shrink: 0;
+        margin-bottom: 15px;
+    }
+}
+
+#process {
+    background-color: $colorDark;
+    padding: 60px 0;
+    
+    h2 {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    ul {
+        @include grid(2, 1rem);
+        width: 100%;
+
+        @include tablet {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    li {
+        list-style: none;
+        @include flexbox(center, 0px, flex-end, wrap);
+        background-color: rgb(255 255 255 / 35%);
+        padding: 10px 15px;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.75) 0%, rgba(154, 160, 149, 0.4) 500%);
+
+        @include laptop {
+            min-height: 175px;
+        }
+
+        p {
+            width: 100%;
+            margin-bottom: 0px;
+            order: 2;
+        }
+
+        .processNum {
+            color: #ffffff;
+        }
+
+        img {
+            order: 1;
+            background-color: gray;
+            width: 60px;
+            height: 60px;
+            margin: 0 0 -20px auto;
+
+        }
+    }
+}
+
+#results {
+    padding: 60px 0;
+
+    .myContainer {
+        @include tablet {
+            @include flexbox(space-between, 60px, flex-start, nowrap);
+        }
+    }
+
+    #projectBullets {
+        @include tablet {
+            width: 20%;
+            min-width: 300px;
+        }
+    }
+    
+    #projectResultsDescription {
+        margin-top: 60px;
+
+        @include tablet {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+
+}
+
+#creativeBreif ul,
+#results ul {
+    padding-left: 25px;
+
+    li {
+        margin-bottom: 20px;
+    }
+}

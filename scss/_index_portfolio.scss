@@ -1,0 +1,61 @@
+#portfolio {
+  padding-top: 80px;
+  margin: 20px auto;
+
+  .headerDiv {
+    @include laptop {
+      @include flexbox(flex-start, 60px, flex-end, nowrap);
+    }
+  }
+
+  h2 {
+    @include laptop {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+#portfolioProjects {
+  margin: 60px auto;
+
+  @include tablet {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+  }
+
+  @include laptop {
+    grid-template-columns: auto auto auto;
+  }
+
+  .project {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+
+    h3 {
+      margin-top: 15px;
+    }
+
+    .imgDiv {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 300px;
+        background-color: gray;
+      }
+  
+      .categoryTagsDiv {
+        @include flexbox( flex-start, 10px, center, nowrap);
+        width: 100%;
+        padding: 0 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+    }
+  }
+}

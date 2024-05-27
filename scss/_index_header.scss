@@ -1,0 +1,110 @@
+#header {
+  padding: 80px 0px;
+  position: relative;
+
+  @include tablet {
+    padding-bottom: 0;
+    margin-bottom: -130px;
+  }
+
+  @include laptop {
+    margin-bottom: -207px;
+  }
+
+  .myContainer.index {
+    @include tablet {
+      @include flexbox(space-between, 10px, flex-start, nowrap);
+    }
+  }
+
+  .content {
+    @include tablet {
+      width: 50%;
+    }
+
+    @include laptop {
+      position: relative;
+    }
+
+    h1 {
+      font-size: 4.75rem;
+      line-height: 4.5rem;
+      position: relative;
+
+      @include laptop {
+        font-size: 6rem;
+        line-height: 5.5rem;
+      }
+  
+      span {
+        font-size: 1rem;
+        color: $colorMain;
+        font-weight: 600;
+        position: absolute;
+        top: -40px;
+        left: 78px;
+
+        @include laptop {
+          top: -50px;
+          left: 105px;
+        }
+      }
+    }
+
+    .description {
+      @include laptop {
+        width: 100%;
+        max-width: 400px;
+        position: absolute;
+        top: 7rem;
+        left: 15rem;
+      }
+    }
+  }
+
+  .bgDiv {
+    background-color: $colorDark;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    height: 21%;
+  }
+}
+
+#headshot {
+  display: none;
+
+  @include tablet {
+    display: inline;
+    max-width: 40%;
+  }
+}
+
+#headerCTAs {
+  width: 100%;
+  @include flexbox(space-between, 10px, $wrap:wrap);
+
+  @include tablet {
+    flex-wrap: nowrap;
+    width: 125%;
+  }
+
+  @include laptop {
+    justify-content: center;
+    padding-left: 100px;
+  }
+
+  button {
+    width: 100%;
+    
+    @include laptop {
+      width: auto;
+    }
+  }
+
+  button:last-child {
+    border: 1px solid #fff;
+  }
+}
