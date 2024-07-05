@@ -6,11 +6,18 @@ nav {
 
   @include tablet {
     padding: 0 10px;
+    transition: padding 300ms ease-in-out;
   }
 
   .myContainer {
-    @include flexbox(space-between, 20px, center, nowrap);
+    @include flexbox(space-between, 10px, center, wrap);
     padding-top: 10px;
+    overflow: hidden;
+
+    @include tablet {
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
     
     p {
       @include text($fontSecondary, 1.125rem, 500, 1.75rem, #000);
@@ -19,12 +26,48 @@ nav {
     }
 
     menu {
-      display: none;
+      max-height: 0px;
+      width: 100%;
+      opacity: 0;
+      overflow: hidden;
+      list-style: none;
+      text-align: right;
+      padding: 1rem;
+      order: 3;
+      position: absolute;
+      top: -100%;
+      transition: max-height 300ms ease-in-out;
 
       @include tablet {
+        position: static;
+        max-height: none;
+        width: auto;
+        padding: 0;
+        opacity: 1;
         display: flex;
-        list-style: none;
         gap: 20px;
+      }
+
+      li {
+        padding: 0.8rem;
+
+        @include tablet {
+          padding: 0;
+        }
+      }
+    }
+
+    menu.active {
+      max-height: 1000px;
+      opacity: 1;
+      position: static;
+    }
+
+    > div {
+      order: 2;
+
+      @include tablet {
+        order: 3;
       }
     }
 
@@ -36,9 +79,10 @@ nav {
       @include tablet {
         display: none;
       }
+
     }
 
-    button {
+    .button {
       padding: 8px 16px;
       border-radius: 8px;
       font-size: 0.75rem;
@@ -52,6 +96,8 @@ nav {
   .myContainer.scrolled {
     background-color: #fff;
     padding-bottom: 10px;
+    transition: background-color 300ms ease-in-out,
+      padding-bottom 300ms ease-in-out;
 
     @include tablet {
       margin-top: 5px;
@@ -60,6 +106,7 @@ nav {
 
     p {
       transform-origin: center left;
+      transition: transform 300ms ease-in-out;
 
       @include tablet {
         transform: scale(1.5);
@@ -71,7 +118,7 @@ nav {
 footer.dark {
   background-color: $colorDark;
   color: #fff;
-  
+
   .navLink {
     color: #fff;
   }
@@ -100,18 +147,29 @@ footer {
       @include tablet {
         width: 100%;
         border-bottom: none;
+        @include flexbox(space-between, 30px, center, nowrap);
       }
 
       p {
         padding: 0 20px;
         margin-bottom: 0;
+        flex-shrink: 0;
+      }
+
+      hr {
+        display: none;
+        @include tablet {
+          display: block;
+          border-color: $colorMain;
+          width: 100%;
+        }
       }
     }
 
     ul {
-      width: 40%;
+      // width: 40%;
       border-top: 1px solid $colorMain;
-      padding: 30px 0 0 15px;
+      padding: 30px 15px 0 15px;
       margin-top: 7rem;
 
       @include tablet {
@@ -120,6 +178,10 @@ footer {
         width: auto;
         padding: 0 20px;
         border-top: none;
+      }
+
+      @include laptop {
+        margin-left: 7rem;
       }
 
       li {
@@ -145,6 +207,26 @@ footer {
       width: auto;
       margin-top: 0;
       font-size: 0.75rem;
+    }
+  }
+}
+
+#footerLinks {
+  @include tablet {
+    position: relative;
+  }
+
+  hr {
+    display: none;
+
+    @include laptop {
+      display: block;
+      position: absolute;
+      left: auto;
+      right: 80%;
+      top: 35%;
+      width: 100%;
+      border-color: $colorMain;
     }
   }
 }

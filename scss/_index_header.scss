@@ -27,7 +27,7 @@
     }
 
     h1 {
-      font-size: 4.75rem;
+      font-size: 4.25rem;
       line-height: 4.5rem;
       position: relative;
 
@@ -88,23 +88,24 @@
 
   @include tablet {
     flex-wrap: nowrap;
-    width: 125%;
   }
 
   @include laptop {
     justify-content: center;
     padding-left: 100px;
+    width: 125%;
   }
 
-  button {
+  .button {
     width: 100%;
-    
-    @include laptop {
-      width: auto;
+
+    @include tablet {
+      width: 50%;
+      padding: 20px 15px;
     }
   }
 
-  button:last-child {
+  .button:last-child {
     border: 1px solid #fff;
   }
 }

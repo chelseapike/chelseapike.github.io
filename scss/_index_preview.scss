@@ -35,28 +35,30 @@
         }
 
         .previewImg {
-            background-color: gray;
             width: 30%;
             flex-grow: 1;
-            height: 100px;
+            height: auto;
+
+            @include tablet {
+                width: 39%;
+            }
 
             @include laptop {
-                width: 25%;
+                width: 24%;
             }
 
             &.main {
                 width: 60%;
                 flex-grow: 2;
-                height: 150px;
+                height: auto;
 
                 @include tablet {
-                    width: 40%;
+                    width: 59%;
                 }
 
                 @include laptop {
-                    width: 50%;
+                    width: 49%;
                     order: 3;
-                    height: 180px;
                 }
             }
         }
@@ -79,6 +81,10 @@
         .previewImg:nth-child(2) {
             transform: translateY(30px);
 
+            @include tablet {
+                transform: translateY(120px);
+            }
+
             @include laptop {
                 transform: translateY(0px);
                 order: 2;
@@ -93,6 +99,6 @@
         left: 0;
         right: 0;
         z-index: -2;
-        height: 75%;
+        height: 100%;
     }
 }

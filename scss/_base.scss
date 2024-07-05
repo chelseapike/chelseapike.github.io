@@ -58,32 +58,29 @@ body {
 }
 
 a,
-button {
+.button {
   @include text($fontSecondary, 1rem, 400, 1rem, $colorBody);
   text-decoration: none;
+  cursor: pointer;
 
   .navLink {
     @include text($fontSecondary, 1.125rem, 400, 1.75rem);
   }
 }
 
-button {
+.button {
   color: #fff;
   background-color: $colorDark;
   text-align: center;
   display: inline-block;
   border-radius: 10px;
-  padding: 20px 50px;
+  padding: 20px 30px;
   white-space: nowrap;
   border: none;
-  transition: transform 0.3s linear;
+  transition: transform 0.3s ease-in-out;
 
   @include laptop {
     padding: 15px 30px;
-  }
-
-  &::after {
-
   }
   
   svg {
@@ -91,19 +88,27 @@ button {
     height: 0px;
     opacity: 0;
     transform: translateX(-10px);
-    transition: transform 0.3s, opacity 0.3s linear;
+    transition: transform 0.3s, opacity 0.3s ease-in-out,
+      opacity 0.3s ease-in-out,
+      width 0.3s ease-in-out,
+      height 0.3s ease-in-out;
   }
   
   &:hover,
   &:focus-visible {
-    @include flexbox(center, 8px, center, nowrap);
-    transform: scale(1.1);
+    @include laptop {
+      @include flexbox(center, 8px, center, nowrap);
+      display: inline-flex;
+      transform: scale(1.1); 
+    }
 
     svg {
-      width: auto;
-      height: 12px;
-      opacity: 1;
-      transform: translate(0px, -1px);
+      @include laptop {
+        width: auto;
+        height: 12px;
+        opacity: 1;
+        transform: translate(0px, -1px);
+      }
     }
   }
 

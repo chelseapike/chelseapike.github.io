@@ -23,7 +23,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     z-index: -2;
     height: 34%;
 
@@ -42,8 +42,8 @@
     justify-content: center;
   }
   
-  button {
-    @include flexbox(center, 20px, center, nowrap);
+  .button {
+    @include flexbox(center, 12px, center, nowrap);
     padding: 10px 20px;
     border: 1px solid $colorDark;
     background-color: #fff;
@@ -65,9 +65,8 @@
     }
 
     img {
-      width: 30px;
-      height: 30px;
-      background-color: gray;
+      width: 40px;
+      height: 40px;
       flex-shrink: 0;
     }
 
@@ -80,7 +79,7 @@
     }
   }
 
-  button:first-child {
+  .button:first-child {
     margin-bottom: 15px;
     
     @include tablet {
