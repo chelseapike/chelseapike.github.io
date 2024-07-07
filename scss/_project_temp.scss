@@ -2,7 +2,7 @@
     position: relative;
 
     @include laptop {
-        padding: 50px;
+        padding: 120px;
     }
 
     .headerBG {
@@ -64,12 +64,10 @@ ul.categoryTagsDiv {
 .projectMainImg {
     color: gray;
     width: 100%;
-    height: 300px;
     margin-bottom: 30px;
 
     @include laptop {
         grid-row: span 2;
-        height: 120%;
     }
 }
 
@@ -88,12 +86,8 @@ ul.categoryTagsDiv {
         }
     }
 
-    h3:nth-child(1n) {
-        margin-top: 60px;
-    }
-
     #projectDetails {
-        margin-top: 60px;
+        margin: 60px 0;
 
         @include tablet {
             @include flexbox(space-between, 30px, flex-start, nowrap);
@@ -101,11 +95,10 @@ ul.categoryTagsDiv {
         }
 
         > div {
-            margin: 0px 0px 30px;
+            margin: 0px 0px 2rem;
 
             @include tablet {
                 width: 50%;
-                margin-bottom: 60px;
             }
         }
     }
@@ -120,6 +113,7 @@ ul.categoryTagsDiv {
         @include flexbox(center, 15px, flex-start, wrap);
         list-style: none;
         text-align: center;
+        padding-left: 0;
 
         @include laptop {
             justify-content: flex-start;
@@ -141,7 +135,6 @@ ul.categoryTagsDiv {
     .projectToolsIcon {
         width: 50px;
         height: 50px;
-        background-color: gray;
         flex-shrink: 0;
         margin-bottom: 15px;
     }
@@ -188,7 +181,6 @@ ul.categoryTagsDiv {
 
         img {
             order: 1;
-            background-color: gray;
             width: 60px;
             height: 60px;
             margin: 0 0 -20px auto;
@@ -232,4 +224,52 @@ ul.categoryTagsDiv {
     li {
         margin-bottom: 20px;
     }
+}
+
+.projectQuote {
+    margin: 1rem 0;
+    text-align: left;
+
+    @include tablet {
+        @include flexbox(flex-start, 1rem, flex-start, nowrap);
+        margin: 1rem auto;
+        max-width: 800px;
+    }
+
+    > img {
+        width: 3rem;
+    }
+
+    > div {
+        flex-grow: 1;
+        margin-top: 0.5rem;
+
+        @include tablet {
+            margin-top: 1rem;
+        }
+    }
+
+    .quoteAuthor {
+        width: 100%;
+        @include flexbox(flex-start, 0.75rem, center, nowrap);
+        margin-top: 2rem;
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 0.5rem;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        p:nth-of-type(1) {
+            font-weight: 600;
+            color: $colorDark;
+        }
+    }
+
 }

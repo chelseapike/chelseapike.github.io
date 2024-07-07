@@ -14,6 +14,8 @@ h1,
 .styledH1 {
   @include text($fontPrimary, 2.25rem, 700, 2.875rem, #000);
   margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 
   @include tablet {
     font-size: 4.5rem;
@@ -119,6 +121,10 @@ a,
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
   padding-top: 80px;
 
@@ -132,6 +138,7 @@ header {
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
+  position: relative;
 
   @include tablet {
     padding: 0 20px;

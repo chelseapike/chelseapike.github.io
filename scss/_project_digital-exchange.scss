@@ -1,0 +1,384 @@
+#digitalExchange {
+  max-width: 100vw;
+  overflow: hidden;
+
+  .projectMainImg {
+    transform: scale(1.5);
+    transform-origin: 65% 50%;
+    margin-top: -2.5rem;
+
+    @include tablet {
+      transform: scale(1.3);
+      margin-top: -6rem;
+    }
+
+    @include laptop {
+      transform: scale(1);
+      margin-top: -12rem;
+      width: 200%;
+      min-width: 35rem;
+      max-width: none;
+      margin-bottom: -400px;
+      margin-left: -70%;
+    }
+  }
+
+  .headerBG {
+    background-image: url("/img/portfolio/Digital-Exchange/background-1462755_Blue_1400x466_660x310.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    
+    @include laptop {
+      height: 93%;
+    }
+
+    img {
+      display: none;
+
+      @include tablet {
+        display: block;
+        position: absolute;
+        height: 120px;
+        object-fit: none;
+        opacity: 0.8;
+        transform: scale(0.75);
+        transform-origin: 0% 0%;
+      }
+
+      @include laptop {
+        transform: scale(0.9);
+      }
+    }
+
+    img:nth-of-type(1) {
+      @include tablet {
+        top: 0;
+        bottom: auto;
+        left: auto;
+        right: -140px;
+      }
+
+      @include laptop {
+        top: -0.25rem;
+        right: -75px;
+      }
+    }
+
+    img:nth-of-type(2) {
+      @include tablet {
+        top: auto;
+        bottom: -1.5rem;
+        left: 0px;
+        right: auto;
+      }
+
+      @include laptop {
+        bottom: -0.5rem;
+      }
+    }
+  }
+
+  .registration {
+    padding: 3rem 0rem;
+    position: relative;
+
+    @include laptop {
+      padding: 5rem 0 7rem;
+    }
+
+    .myContainer {
+      @include flexbox(flex-start, 1rem 0rem, flex-start, wrap);
+
+      @include tablet {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      h2 {
+        width: 100%;
+      }
+
+      img {
+        max-width: 55%;
+
+        @include tablet {
+          max-width: 30%;
+        }
+      }
+
+      img:nth-of-type(2) {
+        position: absolute;
+        top: 9rem;
+        bottom: auto;
+        left: auto;
+        right: 0;
+
+        @include tablet {
+          position: static;
+        }
+      }
+
+      img:nth-of-type(3) {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .bgColor {
+      display: none;
+
+      @include tablet {
+        display: block;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 60%;
+        background: linear-gradient(180deg, #F5FBFE 32%, #fff);
+      }
+    }
+  }
+
+  .homepage {
+    text-align: center;
+    position: relative;
+
+    img:nth-of-type(1) {
+      max-width: 80%;
+      margin: 2rem auto;
+
+      @include tablet {
+        max-width: 60%;
+      }
+    }
+
+    img:nth-of-type(2),
+    img:nth-of-type(3),
+    img:nth-of-type(4) {
+      display: none;
+
+      @include tablet {
+        width: 23%;
+        display: block;
+        position: absolute;
+        border-radius: 0.5rem;
+      }
+    }
+
+    img:nth-of-type(2) {
+      @include tablet {
+        top: auto;
+        bottom: 60%;
+        left: 1.5rem;
+        right: auto;
+      }
+    }
+
+    img:nth-of-type(3) {
+      @include tablet {
+        top: auto;
+        bottom: 45%;
+        left: auto;
+        right: 1.5rem;
+      }
+    }
+
+    img:nth-of-type(4) {
+      @include tablet {
+        top: auto;
+        bottom: 23%;
+        left: auto;
+        right: 1.5rem;
+      }
+    }
+  }
+
+  .core {
+    padding: 3rem 0rem;
+    position: relative;
+
+    @include laptop {
+      padding: 7rem 0rem;
+    }
+
+    .main {
+      position: relative;
+
+      img:nth-of-type(1) {
+        max-width: 80%;
+      }
+
+      img:nth-of-type(2){
+        position: absolute;
+        top: auto;
+        bottom: -3.75rem;
+        left: auto;
+        right: -2.25rem;
+        z-index: 1;
+
+        @include tablet {
+          right: -12%;
+          bottom: -22%;
+        }
+
+        @include laptop {
+          right: -17%;
+        }
+      }
+    }
+
+    .sub {
+      @include flexbox(flex-start, 1rem, flex-start, nowrap);
+      overflow: auto;
+      scrollbar-width: none;
+      padding-top: 3rem;
+
+      @include tablet {
+        overflow: hidden;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      @include laptop {
+        margin-top: 5rem;
+      }
+
+      img {
+        width: 65%;
+
+        @include tablet {
+          width: 30%;
+        }
+      }
+    }
+
+    .myContainer > img {
+      margin: 5rem 0;
+    }
+
+    .bgColor {
+      position: absolute;
+      top: 33%;
+      bottom: auto;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height: 45%;
+      background-color: rgba(3, 163, 223, 0.04);
+
+      @include tablet {
+        height: 50%;
+      }
+
+      @include laptop {
+        top: -7rem;
+      }
+    }
+
+    .bgColor.fade {
+      background: linear-gradient(180deg, rgba(3, 163, 223, 0.04) 32%, #ffffff);
+
+      @include tablet {
+        top: 50%;
+        height: 40%;
+      }
+    }
+  }
+
+  .feature {
+    padding: 3rem 0;
+    position: relative;
+    text-align: center;
+
+    @include laptop {
+      padding: 7rem 0;
+      text-align: left;
+    }
+
+    h2 {
+      @include laptop {
+        position: absolute;
+        top: 0;
+        bottom: auto;
+        left: 20px;
+        right: auto;
+        width: 47%;
+      }
+
+      span {
+        @include laptop {
+          display: inline-block;
+        }
+      }
+    }
+
+    .mockups {
+      position: relative;
+      text-align: right;
+      margin: 2rem 0;
+
+      img:nth-of-type(1) {
+        max-width: 80%;
+
+        @include tablet {
+          max-width: 45%;
+        }
+      }
+
+      img:nth-of-type(2){
+        position: absolute;
+        top: auto;
+        bottom: 8.75rem;
+        left: -2.25rem;
+        right: auto;
+        z-index: 1;
+
+        @include tablet {
+          left: -12%;
+          bottom: 10%;
+        }
+
+        @include laptop {
+          left: -17%;
+
+        }
+      }
+    }
+
+    .projectQuote {
+      @include tablet {
+        position: absolute;
+        top: 8%;
+        bottom: auto;
+        left: 20px;
+        right: auto;
+        max-width: 45%;
+      }
+
+      @include laptop {
+        max-width: 47%;
+        top: 20%;
+      }
+    }
+
+    .bgColor {
+      position: absolute;
+      top: auto;
+      bottom: 24%;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height: 15%;
+      background-color: rgba(3, 163, 223, 0.04);
+  
+      @include tablet {
+        height: 28%;
+        bottom: 0;
+      }
+    }
+  }
+}

@@ -20,33 +20,33 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
 
 <body>
   <nav>
-    <div class="myContainer scrolled boxShadow">
+    <div class="myContainer">
       <p>Chelsea Pike</p>
       <menu>
         <li>
-          <a class="navLink" href="/#about">About</a>
+          <a class="navLink" href="#about">About</a>
         </li>
         <li>
-          <a class="navLink" href="/#portfolio">Portfolio</a>
+          <a class="navLink" href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a class="navLink" href="/#shout-outs">Shout Outs</a>
+          <a class="navLink" href="#shout-outs">Shout Outs</a>
         </li>
         <li>
-          <a class="navLink" href="/#resume">Resume</a>
+          <a class="navLink" href="#resume">Resume</a>
         </li>
       </menu>
       <div>
-        <button type="button" class="nav" href="#">Let's Connect 
+        <a class="button nav" href="#lets-connect">Let's Connect 
           <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-        </button>
+        </a>
         <img id="menu" src="/img/icon-menu.svg">
       </div>
     </div>
   </nav>
-  <main>
+  <main id="webinarTemp">
     <header id="projectHeader">
       <div class="myContainer">
         <div id="headerContent">
@@ -73,19 +73,21 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
             </li>
           </ul>
           <h1>Marketo Webinar Template</h1>
-          <p>Project Subject</p>
+          <p>Dynamic Template</p>
         </div>
-        <img src="#" alt="" class="projectMainImg">
+        <img src="/img/portfolio/Webinar-Template/Laptop_Header_HF.png" alt="Laptop showing the an example webinar landing page. A countdown and live status appears on the sides." class="projectMainImg">
         <div id="projectCTAs">
-          <button type="button" href="https://seamless.ai">See Results
+          <a class="button" type="button" href="https://seamless.ai">See Results
             <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
       </div>
-      <div class="headerBG"></div>
+      <div class="headerBG">
+        <img src="/img/portfolio/Webinar-Template/Drive_Forward_Logo.svg" alt="">
+      </div>
     </header>
     <section id="creativeBreif">
       <div class="myContainer">
@@ -95,15 +97,15 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
           <h3>Tools</h3>
           <ul class="projectTools">
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/Marketo.svg" alt="Marketo icon logo">
               <p>Marketo</p>
             </li>
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/VS-Code_Icon.svg" alt="Visual Studio Code icon logo">
               <p>Visual Studio Code</p>
             </li>
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/Adobe-Photoshop-CC_Icon.svg" alt="Adobe Photoshop icon logo">
               <p>Photoshop</p>
             </li>
           </ul>
@@ -138,22 +140,22 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
           <li class="cornerRadius boxShadow">
             <p class="processNum">01</p>
             <p>Wireframes + Mockups</p>
-            <img>
+            <img src="/img/icons/Layout.svg" alt="Icon of box divided into 3 sections">
           </li>
           <li class="cornerRadius boxShadow">
             <p class="processNum">02</p>
             <p>Review</p>
-            <img>
+            <img src="/img/icons/Message-Circle.svg" alt="Icon of a chat message bubble">
           </li>
           <li class="cornerRadius boxShadow">
             <p class="processNum">03</p>
             <p>Development + Testing</p>
-            <img>
+            <img src="/img/icons/Monitor.svg" alt="Icon of a computer monitor">
           </li>
           <li class="cornerRadius boxShadow">
             <p class="processNum">04</p>
             <p>Template Launch</p>
-            <img>
+            <img src="/img/icons/Send.svg" alt="Icon of a paper airplane">
           </li>
         </ul>
       </div>
@@ -188,9 +190,32 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
         </div>
       </div>
     </section>
-    <section>
-      <div class="myContainer">
-        
+    <section id="webinarFinals">
+      <div class="fullPage">
+        <div class="myContainer">
+          <h2>
+            Final Layouts
+          </h2>
+          <img src="/img/portfolio/Webinar-Template/Laptop_MF.png" alt="Full template design mocked up up in a browser">
+        </div>
+      </div>
+      <div class="confirmation">
+        <div class="myContainer">
+          <img src="/img/portfolio/Webinar-Template/Mobile_Countdown_MF.png"  alt="Webinar details mocked up on mobile device">
+          <img src="/img/portfolio/Webinar-Template/Mobile_Header-Confirmation_MF.png"  alt="Registration complete message mocked up on mobile device">
+          <img src="/img/portfolio/Webinar-Template/Mobile_Form-Confirmation_MF.png"  alt="Form confirmation mocked up on mobile device">
+        </div>
+        <div class="bgColor"></div>
+      </div>
+      <div class="core">
+        <div class="myContainer">
+          <div class="main">
+            <img src="/img/portfolio/Webinar-Template/Laptop_Form_MF.png" alt="Webinar details and form section mocked up up in a browser">
+            <img src="/img/portfolio/Webinar-Template/Laptop_Header-Confirmation_HF.png" alt="Registration confirmation screen mocked up on a laptop">
+          </div>
+          <img src="/img/portfolio/Webinar-Template/Responsive-Group_Full.png" alt="Group of tablet, phone, and desktop screens showing how different sections from the template scaled for each device">
+        </div>
+        <div class="bgColor"></div>
       </div>
     </section>
     <section id="projectContact">
@@ -198,20 +223,20 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
         <h2 class="styledH1">Like What You See?</h2>
         <p class="styledH3">Let's Connect!</p>
         <div id="contactBtnsDiv">
-          <button type="button" class="cornerRadius" href="mailto:cpdesign@chelseapike.com">
-            <img src="">
+          <a class="button cornerRadius" href="mailto:cpdesign@chelseapike.com">
+            <img src="/img/icons/Mail.svg">
             <div>
               <h3>Email</h3>
               <p>cpdesign@chelseapike.com</p>
             </div>
-          </button>
-          <button type="button" class="cornerRadius" href="https://www.linkedin.com/in/chelsea-pike">
-            <img src="">
+          </a>
+          <a class="button cornerRadius" href="https://www.linkedin.com/in/chelsea-pike">
+            <img src="/img/icons/At.svg">
             <div>
               <h3>LinkedIn</h3>
               <p>linkedin.com/in/chelsea-pike</p>
             </div>
-          </button>
+          </a>
         </div>
       </div>
       <div class="bgDiv"></div>
@@ -221,8 +246,8 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
         <h2>Check Out More Projects</h2>
         <div id="portfolioProjects">
           <a class="project" href="/portfolio/seamlessai-website-redesign.html">
-            <div class="imgDiv">
-              <img class="cornerRadius" src="" />
+            <div class="imgDiv cornerRadius boxShadow ">
+              <img src="/img/portfolio/thumbs/SeamlessAI-Website-Redesign.png" />
               <div class="categoryTagsDiv">
                 <div class="categoryTag">
                   <p>UX/UI</p>
@@ -243,35 +268,35 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
             </div>
             <h3>Seamless.AI Website Redesign</h3>
           </a>
-          <a class="project" href="/portfolio/seamlessai-website-redesign.html">
-            <div class="imgDiv">
-              <img class="cornerRadius" src="" />
+          <a class="project" href="/portfolio/landing-page-optimization.html">
+            <div class="imgDiv cornerRadius boxShadow ">
+              <img src="/img/portfolio/thumbs/Landing-Page-Optimization.png" />
               <div class="categoryTagsDiv">
                 <div class="categoryTag">
-                  <p>UX/UI</p>
+                  <p>UI/Ux</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
                 <div class="categoryTag">
-                  <p>Development</p>
+                  <p>Analytics</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
                 <div class="categoryTag">
-                  <p>+3</p>
+                  <p>+2</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
               </div>
             </div>
-            <h3>Seamless.AI Website Redesign</h3>
+            <h3>Landing Page Optimization</h3>
           </a>
-          <a class="project" href="/portfolio/seamlessai-website-redesign.html">
-            <div class="imgDiv">
-              <img class="cornerRadius" src="" />
+          <a class="project" href="/portfolio/digital-exchange.html">
+            <div class="imgDiv cornerRadius boxShadow ">
+              <img src="/img/portfolio/thumbs/Digital-Exchange.png" />
               <div class="categoryTagsDiv">
                 <div class="categoryTag">
-                  <p>UX/UI</p>
+                  <p>Design</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
@@ -281,13 +306,13 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
                   <div class="categoryTagsBG"></div>
                 </div>
                 <div class="categoryTag">
-                  <p>+3</p>
+                  <p>+2</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
               </div>
             </div>
-            <h3>Seamless.AI Website Redesign</h3>
+            <h3>Digital Exchange</h3>
           </a>
         </div>
       </div>
@@ -316,5 +341,6 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
       </p>
     </div>
   </footer>
+  <script src="/js/styles.js" type="text/javascript"></script>
 </body>
 </html>
