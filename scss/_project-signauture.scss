@@ -1,0 +1,245 @@
+#projectSignauture {
+  .headerBG {
+    background-image: url('../img/portfolio/Project-Signature/Header_Background-Overlay.png');
+    background-size: 250%;
+    background-position: 35% 55%;
+    background-repeat: no-repeat;
+    height: 90%;
+
+    @include tablet{
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  .signaturePrintAds {
+    padding: 3rem 0rem;
+    overflow: hidden;
+
+    @include laptop {
+      padding: 7rem 0rem;
+    }
+
+    h2 {
+      position: relative;
+      z-index: 1;
+
+      @include tablet {
+        margin-left: 50%;
+      }
+    }
+
+    .mockups {
+      @include tablet {
+        @include flexbox(space-between, 0rem, flex-start, nowrap);
+      }
+
+      > img {
+        margin: -4rem 0rem -5.5rem;
+
+        @include tablet {
+          width: 50%;
+          transform: scale(145%);
+          margin-top: -8rem;
+        }
+
+        @include laptop {
+          margin-top: -10rem;
+          transform: scale(140%);
+        }
+      }
+
+      div {
+        @include flexbox(space-between, 0.5rem, flex-start, wrap);
+
+        @include tablet {
+          width: 50%;
+          position: relative;
+          z-index: 1;
+        }
+
+        img {
+          width: 48%;
+        }
+      }
+    }
+  }
+
+  .core {
+    padding: 3rem 0rem;
+    position: relative;
+    overflow: hidden;
+
+    @include tablet {
+      padding: 3rem 0rem 5rem;
+    }
+
+    @include laptop {
+      padding: 7rem 0rem;
+    }
+
+    .main {
+      position: relative;
+
+      img:nth-of-type(1) {
+        max-width: 80%;
+      }
+
+      img:nth-of-type(2){
+        position: absolute;
+        top: auto;
+        bottom: -3.75rem;
+        left: auto;
+        right: -2.25rem;
+        z-index: 1;
+
+        @include tablet {
+          right: -12%;
+          bottom: -25%;
+        }
+
+        @include laptop {
+          right: -17%;
+        }
+      }
+    }
+
+    .myContainer > img {
+      margin: 7rem 0 0;
+
+      @include tablet {
+        margin-top: 12rem
+      }
+    }
+
+    .bgColor {
+      display: block;
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height: 45%;
+      background-color: rgba(0, 101, 165, 0.04);
+
+      @include tablet {
+        height: 50%;
+      }
+    }
+  }
+
+  .signatureBrochure {
+    padding: 3rem 0rem;
+    position: relative;
+    overflow: hidden;
+
+    @include tablet {
+      padding: 5rem 0rem 3rem;
+    }
+
+    @include laptop {
+      padding: 7rem 0rem;
+    }
+
+    .myContainer {
+      @include tablet {
+        @include flexbox(space-between, 1rem, flex-start, wrap);
+      }
+
+      h2 {
+        @include tablet {
+          width: 45%;
+          order: 2;
+          margin-top: 1rem;
+        }
+
+        @include laptop {
+          margin-top: 5rem;
+        }
+      }
+
+      div {
+        @include flexbox(space-between, 0.5rem, flex-start, nowrap);
+
+        @include tablet {
+          order: 1;
+          width: 50%;
+        }
+  
+        img {
+          width: 48%;
+        }
+      }
+
+      > img {
+        width: 120%;
+        max-width: none;
+        margin: 2rem 0rem 0rem -10%;
+
+        @include tablet {
+          order: 3;
+          margin-top: -5rem;
+        }
+      }
+    }
+
+    .bgColor {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: auto;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height: 75%;
+      background-color: rgba(0, 101, 165, 0.04);
+
+      @include tablet {
+        height: 50%;
+      }
+    }
+  }
+
+  .signatureTradeShow {
+    padding: 3rem 0rem;
+
+    @include laptop {
+      padding: 3rem 0rem 7rem;
+    }
+
+    .myContainer {
+      @include tablet {
+        @include flexbox(space-between, 1rem, center, wrap);
+      }
+
+      h2 {
+        @include tablet {
+          order: 3;
+          width: 40%;
+        }
+      }
+
+      img:nth-of-type(1) {
+        margin-bottom: 0.5rem;
+  
+        @include tablet {
+          width: 83.33%;
+          margin-left: 16.67%;
+          order: 1;
+          margin-bottom: -1rem;
+
+        }
+      }
+  
+      img:nth-of-type(2) {
+        @include tablet {
+          width: 50%;
+          order: 2;
+          transform: scale(115%);
+          transform-origin: bottom left;
+        }
+      }
+    }
+  }
+}

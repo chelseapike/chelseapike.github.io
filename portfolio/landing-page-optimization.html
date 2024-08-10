@@ -20,33 +20,33 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
 
 <body>
   <nav>
-    <div class="myContainer scrolled boxShadow">
+    <div class="myContainer">
       <p>Chelsea Pike</p>
       <menu>
         <li>
-          <a class="navLink" href="/#about">About</a>
+          <a class="navLink" href="#about">About</a>
         </li>
         <li>
-          <a class="navLink" href="/#portfolio">Portfolio</a>
+          <a class="navLink" href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a class="navLink" href="/#shout-outs">Shout Outs</a>
+          <a class="navLink" href="#shout-outs">Shout Outs</a>
         </li>
         <li>
-          <a class="navLink" href="/#resume">Resume</a>
+          <a class="navLink" href="#resume">Resume</a>
         </li>
       </menu>
       <div>
-        <button type="button" class="nav" href="#">Let's Connect 
+        <a class="button nav" href="#lets-connect">Let's Connect 
           <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-        </button>
+        </a>
         <img id="menu" src="/img/icon-menu.svg">
       </div>
     </div>
   </nav>
-  <main>
+  <main id="lpOp">
     <header id="projectHeader">
       <div class="myContainer">
         <div id="headerContent">
@@ -75,17 +75,20 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
           <h1>Landing Page Optimization</h1>
           <p>Page Speed & Conversion Rate Performance Enhancements</p>
         </div>
-        <img src="#" alt="" class="projectMainImg">
+        <img src="../img/portfolio/LP-Optimization/Header.png" alt="Laptop showing an example landing page with a upward trending line graph and a high perfromace score overlayed" class="projectMainImg">
         <div id="projectCTAs">
-          <button type="button" href="https://seamless.ai">See Results
+          <a class="button" type="button" href="https://seamless.ai">See Results
             <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 13.5L7 7.5L0.999999 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
       </div>
-      <div class="headerBG"></div>
+      <div class="headerBG">
+        <img src="/img/portfolio/SeamlessAI-Website/BG_5px-Dots-Grid.svg" alt="">
+        <img src="/img/portfolio/SeamlessAI-Website/BG_5px-Dots-Grid.svg" alt="">
+      </div>
     </header>
     <section id="creativeBreif">
       <div class="myContainer">
@@ -95,35 +98,31 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
           <h3>Tools</h3>
           <ul class="projectTools">
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/GTmetrix_Icon.svg" alt="GTmetrix icon logo">
               <p>GTmetrix</p>
             </li>
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/Google-Analytics_Icon.svg" alt="Google Analytics icon logo">
               <p>Google Analytics</p>
             </li>
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/VS-Code_Icon.svg" alt="Visual Studio Code icon logo">
               <p>Visual Studio Code</p>
             </li>
             <li>
-              <img class="projectToolsIcon">
-              <p>Visual Studio Code</p>
-            </li>
-            <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/Adobe-Photoshop-CC_Icon.svg" alt="Adobe Photoshop icon logo">
               <p>Photoshop</p>
             </li>
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/Clickfunnels_Icon.svg" alt="Chickfunnels icon logo">
               <p>Clickfunnels</p>
             </li>
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/Instapage_Icon.svg" alt="Instapage icon logo">
               <p>Instapage</p>
             </li>
             <li>
-              <img class="projectToolsIcon">
+              <img class="projectToolsIcon" src="/img/logos/Webflow_Icon_Blue.svg" alt="Webflow icon logo">
               <p>Webflow</p>
             </li>
           </ul>
@@ -161,27 +160,27 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
           <li class="cornerRadius boxShadow">
             <p class="processNum">01</p>
             <p>Audit Current Pages</p>
-            <img>
+            <img src="/img/icons/Flag.svg" alt="Icon of a waving flag">
           </li>
           <li class="cornerRadius boxShadow">
             <p class="processNum">02</p>
             <p>Implemented Best Practices</p>
-            <img>
+            <img src="/img/icons/Monitor.svg" alt="Icon of a computer monitor">
           </li>
           <li class="cornerRadius boxShadow">
             <p class="processNum">03</p>
             <p>Monitored Performance</p>
-            <img>
+            <img src="/img/icons/Eye.svg" alt="Icon of an open eye">
           </li>
           <li class="cornerRadius boxShadow">
             <p class="processNum">04</p>
             <p>Content & Design Updates</p>
-            <img>
+            <img src="/img/icons/Layout.svg" alt="Icon of box divided into 3 sections">
           </li>
           <li class="cornerRadius boxShadow">
             <p class="processNum">05</p>
             <p>Reporting</p>
-            <img>
+            <img src="/img/icons/Bar-Chart.svg" alt="Icon of a bar chart">
           </li>
         </ul>
       </div>
@@ -219,9 +218,248 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
         </div>
       </div>
     </section>
-    <section>
+    <section class="performance">
       <div class="myContainer">
-        
+        <img class="cornerRadius" src="../img/portfolio/LP-Optimization/Pages-Tiled.png" alt="Landing pages tiled within frame">
+        <div class="content">
+          <h2>Page Speed Performance</h2>
+          <div class="intro">
+            <div>
+              <h3>Overview</h3>
+              <p>
+                Ideally, a page should load within 3 seconds. In fact, <a target="_blank" href="https://www.websitebuilderexpert.com/building-websites/website-load-time-statistics/#:~:text=Ideally%2C%20you'll%20want%20your,seconds%20before%20abandoning%20a%20site." rel="nofollow noreferrer">40% of users</a> will abandon a site for anything longer. In order to establish a baseline for the current content and design, pages needed to load quicker.
+              </p>
+              <p>
+                Among other issues, current pages were bloated with unnecessary code, text was being rasterized within images, image file sizes were massive, and no accessibility standards were being utilized. Fixing these issues would not only help pages load faster, but also increase SEO and ad relevance - ultimately driving more traffic.
+              </p>
+            </div>
+            <div class="list">
+              <p>Phase 1 Improvements</p>
+              <ul>
+                <li>Semantic HTML</li>
+                <li>Consolidate Code</li>
+                <li>Image Optimizations</li>
+                <li>Accessibility Best Practices</li>
+              </ul>
+            </div>
+          </div>
+          <div class="table">
+            <h3>Performance</h3>
+            <table class="cornerRadius boxShadow">
+              <thead>
+                <tr>
+                  <th scope="col">Page</th>
+                  <th scope="col" class="styledH4">% Increase</th>
+                  <th scope="col">Original</th>
+                  <th scope="col">New</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">B2B Business Emails</th>
+                  <td><div class="styledH4 highlight">38%</div></td>
+                  <td>D 56%</td>
+                  <td>A 94%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Industry Appointment Setting</th>
+                  <td><div class="styledH4 highlight">51%</div></td>
+                  <td>E 41%</td>
+                  <td>A 92%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Industry Freight</th>
+                  <td><div class="styledH4 highlight">45%</div></td>
+                  <td>E 48%</td>
+                  <td>A 93%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Industry Recruiting</th>
+                  <td><div class="styledH4 highlight">27%</div></td>
+                  <td>C 65%</td>
+                  <td>A 92%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Persona Enterprise</th>
+                  <td><div class="styledH4 highlight">17%</div></td>
+                  <td>C 75%</td>
+                  <td>A 92%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Persona Marketing Teams</th>
+                  <td><div class="styledH4 highlight">17%</div></td>
+                  <td>C 75%</td>
+                  <td>A 92%</td>
+                </tr>
+                <tr>
+                  <th scope="row">10 Secrets to Book Meetings</th>
+                  <td><div class="styledH4 highlight">10%</div></td>
+                  <td>D 56%</td>
+                  <td>C 66%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Autopilot</th>
+                  <td><div class="styledH4 highlight">27%</div></td>
+                  <td>D 53%</td>
+                  <td>B 80%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Competitor</th>
+                  <td><div class="styledH4 highlight">42%</div></td>
+                  <td>D 53%</td>
+                  <td>A 95%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Reviews</th>
+                  <td><div class="styledH4 highlight">31%</div></td>
+                  <td>D 56%</td>
+                  <td>B 87%</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              The goal was to get every page scoring at an A or B. At this stage, nothing was cut from the design or content. For this reason, some pages were able to score better than others. Pages that were built like funnels (extremely long) or integrated third party code were among the pages that were harder to optimize. In these cases, I was still able to drastically improve the performance of the page. More severe edits would need to be made to improve further.
+            </p>
+            <p>
+              Overall, these structural updates signaled a positive change in Google Ads. Ad relevance increased for the terms the Paid Media team built campaigns around, which led to an increase of traffic to these pages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cro">
+      <div class="myContainer">
+        <div class="content">
+          <h2>Conversion Rate Optimization</h2>
+          <div class="intro">
+            <div>
+              <h3>Overview</h3>
+              <p>
+                Across all industries, the <a href="https://www.wordstream.com/blog/ws/2014/03/17/what-is-a-good-conversion-rate?_ga=2.246741764.1810118832.1699644556-1954824212.1699644556" rel="nofollow noreferrer">average landing page conversion rate</a> was 2.35%, with the top 25% converting at 5.31% or higher. Keep in mind that conversion rates will vary depending on what the conversion actually is. For example, the conversion rate for downloading a free piece of content is likely to be higher than it will be for a paid purchase.
+              </p>
+              <p>
+                The conversion for these pages is a free trial offer to the Seamless.AI platform. While there is no payment information needed from the user, the signup process adds complexity to the conversion.
+              </p>
+            </div>
+            <div class="list">
+              <p>Phase 2 Improvements</p>
+              <ul>
+                <li>Updated Business Stats & Awards</li>
+                <li>New Featured Products</li>
+                <li>Industry Relevant Case Studies</li>
+                <li>Brought Design into Brand</li>
+              </ul>
+            </div>
+          </div>
+          <div class="table">
+            <h3>Performance</h3>
+            <div class="tableWrapper">
+              <table>
+                <thead>
+                  <tr class="separators">
+                    <td></td>
+                    <td colspan="3"><div class="highlight">Session Conversion Rate</div></td>
+                    <td colspan="3"><div class="highlight">User Conversion Rate</div></td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Page</th>
+                    <th scope="col" class="styledH4">% Increase</th>
+                    <th scope="col">Original</th>
+                    <th scope="col">New</th>
+                    <th scope="col" class="styledH4">% Increase</th>
+                    <th scope="col">Original</th>
+                    <th scope="col">New</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">B2B Business Emails</th>
+                    <th scope="row">Session Conversion Rate</th>
+                    <td><div class="styledH4 highlight">71%</div></td>
+                    <td>2.12%</td>
+                    <td>3.63%</td>
+                    <th scope="row">User Conversion Rate</th>
+                    <td><div class="styledH4 highlight">31%</div></td>
+                    <td>2.97%</td>
+                    <td>3.88%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Industry Freight</th>
+                    <th scope="row">Session Conversion Rate</th>
+                    <td><div class="styledH4 highlight">48%</div></td>
+                    <td>2.73%</td>
+                    <td>4.04%</td>
+                    <th scope="row">User Conversion Rate</th>
+                    <td><div class="styledH4 highlight">27%</div></td>
+                    <td>3.55%</td>
+                    <td>4.49%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Testing started with 2 of the landing pages that had the most promise based on data from Google Ads. Paid Media was getting a decent amount of traffic and click through rate on ad spend. This would allow us to see results quickly.
+            </p>
+            <p>
+              Ad traffic was split between the original and newer pages. Within 1 month, the new pages started outperforming the original ones - even with Google still favoring the originals because of their longer history. In order to build history quicker, the original pages were throttled at bit. In the end, the original pages were turned off and 100% of traffic was sent to the new, better converting pages.
+            </p>
+          </div>
+          <div class="example">
+            <div>
+              <p>Original</p>
+              <img class="boxShadow" src="../img/portfolio/LP-Optimization/LP_Freight_Original.png" alt="Example of the Freight landing page before any optimizations">
+            </div>
+            <div>
+              <p>New</p>
+              <img class="boxShadow" src="../img/portfolio/LP-Optimization/LP_Freight_New.png" alt="Example of the Freight landing page after optimizations">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="final">
+      <div class="myContainer">
+        <h2>Final Thoughts</h2>
+        <p>
+          Initial updates provided a minimal facelift to the overall content and design. I would say the largest improvement happened through upgrading the overall structure in the backend.
+        </p>
+        <p>
+          I will continue to monitor the performance of these pages and gather more detailed user information from heat maps, click engagement, and anonymous session recordings. From there, I can make plans to further iterate and test.
+        </p>
+        <h3>Overall Achievements</h3>
+        <ul>
+          <li>
+            <h4>31% Avg Increase</h4>
+            <p>in Page Speed Performance Across 10 Pages</p>
+          </li>
+          <li>
+            <h4>60% Avg Increase</h4>
+            <p>in Session Conversion Rate Across 2 Pages</p>
+          </li>
+          <li>
+            <h4>45% Avg Increase</h4>
+            <p>in User Conversion Rate Across 2 Pages</p>
+          </li>
+        </ul>
+        <div class="projectQuote">
+          <img src="/img/icons/Quote.svg" alt="Quotemarks">
+          <div>
+            <h4>
+              Shoutout Chelsea for the suggestions that we took to improve the Chrome Extension page. Definitely seeing higher adoption rates since those updates.
+            </h4>
+            <div class="quoteAuthor">
+              <img class="boxShadow" src="/img/headshots/Mason-Johnson.png" alt="Photo of Mason Johnson">
+              <div>
+                <p>
+                  Mason Johnson
+                </p>
+                <p>
+                  Sr. Product Manager, Seamless.AI
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="projectContact">
@@ -229,20 +467,20 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
         <h2 class="styledH1">Like What You See?</h2>
         <p class="styledH3">Let's Connect!</p>
         <div id="contactBtnsDiv">
-          <button type="button" class="cornerRadius" href="mailto:cpdesign@chelseapike.com">
-            <img src="">
+          <a class="button cornerRadius" href="mailto:cpdesign@chelseapike.com">
+            <img src="/img/icons/Mail.svg">
             <div>
               <h3>Email</h3>
               <p>cpdesign@chelseapike.com</p>
             </div>
-          </button>
-          <button type="button" class="cornerRadius" href="https://www.linkedin.com/in/chelsea-pike">
-            <img src="">
+          </a>
+          <a class="button cornerRadius" href="https://www.linkedin.com/in/chelsea-pike">
+            <img src="/img/icons/At.svg">
             <div>
               <h3>LinkedIn</h3>
               <p>linkedin.com/in/chelsea-pike</p>
             </div>
-          </button>
+          </a>
         </div>
       </div>
       <div class="bgDiv"></div>
@@ -252,8 +490,8 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
         <h2>Check Out More Projects</h2>
         <div id="portfolioProjects">
           <a class="project" href="/portfolio/seamlessai-website-redesign.html">
-            <div class="imgDiv">
-              <img class="cornerRadius" src="" />
+            <div class="imgDiv cornerRadius boxShadow ">
+              <img src="/img/portfolio/thumbs/SeamlessAI-Website-Redesign.png" />
               <div class="categoryTagsDiv">
                 <div class="categoryTag">
                   <p>UX/UI</p>
@@ -274,12 +512,12 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
             </div>
             <h3>Seamless.AI Website Redesign</h3>
           </a>
-          <a class="project" href="/portfolio/seamlessai-website-redesign.html">
-            <div class="imgDiv">
-              <img class="cornerRadius" src="" />
+          <a class="project" href="/portfolio/digital-exchange.html">
+            <div class="imgDiv cornerRadius boxShadow ">
+              <img src="/img/portfolio/thumbs/Digital-Exchange.png" />
               <div class="categoryTagsDiv">
                 <div class="categoryTag">
-                  <p>UX/UI</p>
+                  <p>Design</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
@@ -289,36 +527,36 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
                   <div class="categoryTagsBG"></div>
                 </div>
                 <div class="categoryTag">
-                  <p>+3</p>
+                  <p>+2</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
               </div>
             </div>
-            <h3>Seamless.AI Website Redesign</h3>
+            <h3>Digital Exchange</h3>
           </a>
-          <a class="project" href="/portfolio/seamlessai-website-redesign.html">
-            <div class="imgDiv">
-              <img class="cornerRadius" src="" />
+          <a class="project" href="/portfolio/seamlessai-brand-refresh.html">
+            <div class="imgDiv cornerRadius boxShadow ">
+              <img src="/img/portfolio/thumbs/SeamlessAI-Brand-Refresh.png" />
               <div class="categoryTagsDiv">
                 <div class="categoryTag">
-                  <p>UX/UI</p>
+                  <p>Branding</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
                 <div class="categoryTag">
-                  <p>Development</p>
+                  <p>Design</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
                 <div class="categoryTag">
-                  <p>+3</p>
+                  <p>+2</p>
                   <div class="categoryTagsBorder boxShadow"></div>
                   <div class="categoryTagsBG"></div>
                 </div>
               </div>
             </div>
-            <h3>Seamless.AI Website Redesign</h3>
+            <h3>Seamless.AI Brand Refresh</h3>
           </a>
         </div>
       </div>
@@ -347,5 +585,6 @@ hxmlns:o="urn:schemas-microsoft-com:office:office">
       </p>
     </div>
   </footer>
+  <script src="/js/styles.js" type="text/javascript"></script>
 </body>
 </html>

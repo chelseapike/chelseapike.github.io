@@ -1,0 +1,230 @@
+#bicsi {
+  .headerBG {
+    background-image: url('../img/portfolio/BICSI/Header_Graphic-Element.svg');
+    background-size: auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+    @include tablet {
+      background-position: center 3%;
+    }
+
+  }
+
+  #projectHeader {
+    @include laptop {
+      padding: 120px 0px;
+    }
+  }
+
+  #projectCTAs {
+    height: fit-content;
+  }
+
+  .mainGraphics {
+    padding: 3rem 0rem;
+
+    .headerGraphics {
+      margin-top: 2rem;
+      @include flexbox(center, 1rem, flex-start, wrap);
+
+      @include tablet {
+        justify-content: flex-start;
+      }
+
+      @include laptop {
+        max-width: 1200px;
+        margin: 2rem auto;
+        width: 100%;
+        padding: 0 20px;
+        flex-wrap: nowrap;
+        gap: 0;
+        justify-content: center;
+      }
+
+      img {
+        @include tablet {
+          width: 80%;
+        }
+
+        @include laptop {
+          width: 35%;
+        }
+      }
+      img:nth-of-type(1) {
+        @include laptop {
+          width: 31.5%;
+        }
+      }
+
+      img:nth-of-type(2) {
+        @include tablet {
+          margin-left: 20%;
+        }
+
+        @include laptop {
+          margin: 0 -1px 0;
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  .shoutout {
+    padding: 3rem 0rem 5rem;
+
+    @include laptop {
+      padding: 7rem 0 18rem;
+    }
+
+    .myContainer {
+      @include tablet {
+        @include flexbox(space-between, 2rem, center, wrap);
+      }
+
+      h2 {
+        @include tablet {
+          width: 30%;
+          align-self: flex-start;
+          margin-top: 5rem;
+        }
+
+        @include laptop {
+          margin-top: 7rem;
+        }
+      }
+
+      .tvGraphics {
+        margin: 2rem 0rem 5rem;
+  
+        @include tablet {
+          width: 60%;
+          order: 1;
+          margin-bottom: 3rem;
+        }
+  
+        .frame{
+          border: 1px solid $colorDark;
+          padding: 0.5rem;
+          border-radius: 0.25rem;
+          margin: 0.5rem 0;
+  
+          img {
+            border: 1px solid $colorDark;
+          }
+        }
+      }
+
+      .projectQuote {
+        margin-bottom: 5rem;
+  
+        @include tablet {
+          width: 55%;
+          order: 3;
+        }
+      }
+
+      > img {
+        @include tablet {
+          width: 40%;
+          order: 2;
+          transform: scale(1.5);
+          margin-top: -8rem;
+        }
+
+        @include laptop {
+          // padding-left: 1rem;
+          transform: scale(1.7);
+          margin-top: -3rem;
+        }
+      }
+    }
+  }
+
+  .details {
+    padding: 3rem 0rem;
+
+    @include laptop {
+      padding: 7rem 0rem;
+    }
+
+    h2 {
+      @include tablet {
+        width: 32%;
+      }
+    }
+
+    .display {
+      @include tablet {
+        @include flexbox(space-between, 1rem, flex-start, wrap);
+        margin-top: -13rem;
+      }
+
+      img {
+        margin: 0.75rem 0rem;
+
+        @include tablet {
+          margin: 0rem;
+        }
+      }
+
+      img:nth-of-type(1) {
+        @include tablet {
+          order: 2;
+          width: 65%;
+        }
+      }
+
+      img:nth-of-type(2) {
+        @include tablet {
+          order: 1;
+          width: 32%;
+          margin-top: 30%;
+        }
+      }
+
+      img:nth-of-type(3) {
+        @include tablet {
+          order: 3;
+          width: 32%;
+          margin: -23% 0% 0% 34%;
+        }
+      }
+    }
+
+    .backPanel {
+      @include tablet {
+        @include flexbox(space-between, 1rem, stretch, nowrap);
+        margin-top: 5rem;
+        
+      }
+
+      @include laptop {
+        margin-top: 7rem;
+      }
+
+      img {
+        margin: 0.75rem 0rem;
+
+        @include tablet {
+          margin: 0rem;
+        }
+      }
+
+      img:nth-of-type(1) {
+        @include tablet {
+          width: 60%;
+          object-fit: cover;
+          object-position: center right;
+        }
+      }
+
+      img:nth-of-type(2) {
+        @include tablet {
+          width: 38%;
+        }
+      }
+    }
+  }
+}
