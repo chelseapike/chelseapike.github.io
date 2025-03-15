@@ -9,22 +9,25 @@
 
     @include tablet {
       transform: scale(1.3);
-      margin-top: -6rem;
+      margin: -16rem 0 0 6rem;
     }
 
     @include laptop {
       transform: scale(1);
-      margin-top: -12rem;
-      width: 200%;
       min-width: 35rem;
       max-width: none;
-      margin-bottom: -400px;
-      margin-left: -70%;
+      margin: -25rem -20% -13rem 17%;
+      order: 3 !important;
+    }
+
+    @include desktop {
+      transform: scale(1.1);
+      margin-left: 20%;
     }
   }
 
   .headerBG {
-    background-image: url("/img/portfolio/Digital-Exchange/background-1462755_Blue_1400x466_660x310.jpg");
+    background-image: url("/img/portfolio/Digital-Exchange/background-1462755_Blue_1400x466_660x310.webp");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -39,7 +42,7 @@
       @include tablet {
         display: block;
         position: absolute;
-        height: 120px;
+        height: 7.5rem;
         object-fit: none;
         opacity: 0.8;
         transform: scale(0.75);
@@ -69,7 +72,7 @@
       @include tablet {
         top: auto;
         bottom: -1.5rem;
-        left: 0px;
+        left: 0;
         right: auto;
       }
 
@@ -195,6 +198,26 @@
         right: 1.5rem;
       }
     }
+
+    .detailLines:nth-of-type(1) {
+      @include laptop {
+        width: 100%;
+        z-index: -1;
+        top: 50%;
+        right: 60%;
+      }
+    }
+  
+    .detailLines:nth-of-type(2) {
+      @include laptop {
+        width: 65rem;
+        z-index: -2;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        top: 50%;
+        left: 6rem;
+      }
+    }
   }
 
   .core {
@@ -304,7 +327,7 @@
         position: absolute;
         top: 0;
         bottom: auto;
-        left: 20px;
+        left: 1.25rem;
         right: auto;
         width: 47%;
       }
@@ -354,7 +377,7 @@
         position: absolute;
         top: 8%;
         bottom: auto;
-        left: 20px;
+        left: 1.25rem;
         right: auto;
         max-width: 45%;
       }
@@ -378,6 +401,37 @@
       @include tablet {
         height: 28%;
         bottom: 0;
+      }
+    }
+
+    .detailLines:nth-of-type(1) {
+      @include laptop {
+        width: 100%;
+        z-index: -1;
+        top: 35%;
+        right: 60%;
+      }
+    }
+  
+    .detailLines:nth-of-type(2) {
+      @include laptop {
+        width: 65rem;
+        z-index: -2;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        top: 35%;
+        left: 6rem;
+      }
+    }
+
+    .detailLines:nth-of-type(3) {
+      @include laptop {
+        width: 65rem;
+        z-index: -2;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        top: 80%;
+        left: 25rem;
       }
     }
   }

@@ -1,0 +1,409 @@
+#edge8 {
+  overflow: hidden;
+
+  #projectHeader {
+    text-align: center;
+
+    @include laptop {
+      text-align: left;
+    }
+
+    .headerBG {
+      background-image: url('../img/portfolio/Edge8/BG_Texture.webp'), linear-gradient(#fff 85%, #D9D9D9 100%);
+      border-bottom: 0.5rem solid #005195;
+      height: 78%;
+    }
+
+    #headerContent {
+      text-align: left;
+    }
+  
+    .projectMainImg {
+      transform: scale(1.2);
+      transform-origin: center center;
+      max-width: 500px;
+      margin: auto;
+
+      @include tablet {
+        max-width: none;
+        margin: -8rem 0 0 2rem;
+      }
+
+      @include laptop {
+        transform: scale(1.2);
+        transform-origin: -250% 20%;
+        order: 3;
+        margin-top: -25rem;
+        max-width: 600px;
+      }
+
+      @include desktop {
+        transform: scale(1.5);
+        transform-origin: -100% 37%;
+      }
+    }
+  
+    h1 sup span {
+      font-size: 1rem;
+
+      @include tablet {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .branding {
+    padding: 3rem 0rem;
+
+    @include laptop {
+      padding: 7rem 0rem;
+    }
+
+    .main {
+      margin-top: -4rem;
+
+      @include tablet {
+        @include flexbox(space-between, 0rem, center, nowrap);
+      }
+
+      img:nth-of-type(1) {
+        @include tablet {
+          width: 80%;
+          margin-left: -10%;
+        }
+      }
+
+      img:nth-of-type(2) {
+        display: none;
+
+        @include tablet {
+          display: block;
+          width: 40%;
+          margin-left: -20%;
+        }
+      }
+    }
+
+    .variations {
+      @include flexbox(space-between, 0.5rem, center, wrap);
+
+      img {
+        width: 48%;
+
+        @include tablet {
+          width: 30%;
+        }
+      }
+
+      img:nth-of-type(1) {
+        width: 100%;
+
+        @include tablet {
+          width: 30%;
+        }
+      }
+
+      img:nth-of-type(3) {
+        background-color: #005195;
+      }
+    }
+  }
+
+  .printAds {
+    padding: 3rem 0rem;
+
+    @include tablet {
+      padding: 10rem 0rem 5rem;
+    }
+
+    @include laptop {
+      padding: 7rem 0rem 0rem;
+    }
+
+    h2 {
+      position: relative;
+      z-index: 1;
+
+      @include tablet {
+        margin-left: 50%;
+      }
+    }
+
+    .mockups {
+      @include tablet {
+        @include flexbox(space-between, 0rem, flex-start, nowrap);
+      }
+
+      > img {
+        margin: -4rem 0rem -5.5rem;
+
+        @include tablet {
+          width: 50%;
+          transform: scale(145%);
+          margin-top: -7rem;
+        }
+
+        @include laptop {
+          margin-top: -10rem;
+          transform: scale(140%);
+        }
+      }
+
+      div {
+        @include flexbox(space-between, 0.5rem, flex-start, wrap);
+
+        @include tablet {
+          width: 50%;
+          position: relative;
+          z-index: 1;
+        }
+
+        img {
+          width: 48%;
+        }
+      }
+    }
+  }
+
+  .shoutout {
+    padding: 3rem 0rem 5rem;
+
+    @include laptop {
+      padding: 7rem 0 3rem;
+    }
+
+    .myContainer {
+      @include tablet {
+        @include flexbox(space-between, 2rem, flex-end, nowrap);
+      }
+    }
+
+    .mockups {
+
+      @include tablet {
+        width: 40%;
+      }
+
+      @include laptop {
+        margin-bottom: 9rem;
+      }
+
+      img {
+        max-width: none;
+        width: 35rem;
+        position: relative;
+        z-index: -1;
+        transform: translate(-4rem, 8rem);
+
+        @include laptop {
+          transform: translate(-4rem, 15rem);
+        }
+      }
+    }
+
+    .projectQuote {
+      margin-bottom: 5rem;
+
+      @include tablet {
+        width: 55%;
+      }
+    }
+  }
+
+  .shoutout.second {
+    @include tablet {
+      margin-bottom: 5rem;
+    }
+
+    @include laptop {
+      margin-bottom: 12rem;
+      margin-top: -15rem;
+    }
+
+    .mockups img {
+      display: none;
+
+      @include tablet {
+        display: block;
+        transform: translate(-10rem, 16rem);
+      }
+
+      @include laptop {
+        width: 50rem;
+        transform: translate(-18rem, 35rem);
+      }
+    }
+
+    .detailLines:nth-of-type(1) {
+      @include laptop {
+        width: 100%;
+        z-index: -1;
+        top: 105%;
+        left: -50%;
+      }
+    }
+
+    .detailLines:nth-of-type(2) {
+      @include laptop {
+        width: 65rem;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        z-index: -1;
+        top: 105%;
+        left: -3rem;
+      }
+    }
+  }
+
+  .digitalAds {
+    padding: 3rem 0rem 5rem;
+    position: relative;
+
+    @include laptop {
+      padding: 9rem 0 7rem;
+    }
+
+    .myContainer div {
+      margin-top: 2rem;
+      @include flexbox(space-between, 0.5rem, center, wrap);
+
+      @include tablet {
+        margin-top: -2.75rem;
+      }
+
+      @include tablet {
+        img {
+          width: 49%;
+        }
+      }
+    }
+
+    .bgDiv {
+      background-color: #0065A5;
+      opacity: 0.04;
+      position: absolute;
+      z-index: -1;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 75%;
+
+      @include tablet {
+        height: 72%;
+      }
+
+      @include laptop {
+        height: 70%;
+      }
+    }
+  }
+
+  .packageDesign {
+    padding: 3rem 0rem 5rem;
+
+    @include laptop {
+      padding: 9rem 0 0rem;
+    }
+
+    div div  {
+      @include tablet {
+        @include flexbox(space-between, 0.5rem, center, nowrap);
+      }
+
+      img {
+        @include tablet {
+          width: 32%;
+        }
+      }
+    }
+  }
+
+  .docs {
+    padding: 3rem 0rem 5rem;
+    position: relative;
+
+    @include laptop {
+      padding: 9rem 0 7rem;
+    }
+
+    .myContainer {
+      > img {
+        transform: scale(1.3);
+        transform-origin: 60% center;
+        margin: -2rem auto 2rem;
+
+        @include laptop {
+          margin-top: -12rem;
+        }
+      }
+
+      div {
+        @include tablet {
+          @include flexbox(space-between, 0rem, center, wrap);
+        }
+
+        img {
+          width: 75%;
+
+          @include tablet {
+            width: 50%;
+          }
+        }
+
+        img:nth-of-type(2) {
+          margin: -25% 0 0 25%;
+
+          @include tablet {
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .bgDiv {
+      background-color: #0065A5;
+      opacity: 0.04;
+      position: absolute;
+      z-index: -2;
+      top: auto;
+      bottom: 20%;
+      left: 0;
+      right: 0;
+      height: 55%;
+
+      @include tablet {
+        height: 50%;
+      }
+
+      @include laptop {
+        height: 55%;
+      }
+    }
+  }
+
+  .tradeShow {
+    padding: 3rem 0rem 5rem;
+
+    @include laptop {
+      padding: 9rem 0 7rem;
+    }
+
+    .stairs {
+      @include flexbox(space-between, 0.5rem, stretch, nowrap);
+      margin-bottom: 2rem;
+
+      div {
+        width: 48%;
+
+        > img:nth-of-type(1) {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      > img {
+        width: 48%;
+      }
+    }
+  }
+}

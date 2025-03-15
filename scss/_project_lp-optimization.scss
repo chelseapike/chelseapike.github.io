@@ -1,0 +1,496 @@
+#lpOp {
+  max-width: 100vw;
+  overflow: hidden;
+
+  #projectHeader {
+    @include tablet {
+      text-align: center;
+    }
+
+    @include laptop {
+      text-align: left;
+    }
+  }
+
+  #headerContent {
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  .projectMainImg {
+    transform: scale(1.1);
+    margin-bottom: -0.5rem;
+
+    @include tablet {
+      margin: 0 auto -1.5rem;
+      max-width: 600px;
+    }
+
+    @include laptop {
+      transform: scale(1);
+      min-width: 35rem;
+      max-width: none;
+      margin: -25rem 0 0 30rem;
+      order: 3 !important;
+    }
+  }
+
+  #projectCTAs {
+    @include laptop {
+      margin: 0;
+    }
+  }
+
+  .headerBG {
+    background: linear-gradient(45deg, #DBEEFF 0%, #F4FAFF 22%, #fff 48%, #F4FAFF 78%, #DBEEFF 100%);
+    
+    @include laptop {
+      height: 93%;
+    }
+
+    img {
+      display: none;
+
+      @include tablet {
+        display: block;
+        position: absolute;
+        height: 7.5rem;
+        object-fit: none;
+        opacity: 0.8;
+        transform: scale(0.75);
+        transform-origin: 0% 0%;
+      }
+
+      @include laptop {
+        transform: scale(0.9);
+      }
+    }
+
+    img:nth-of-type(1) {
+      @include tablet {
+        top: 0;
+        bottom: auto;
+        left: auto;
+        right: -140px;
+      }
+
+      @include laptop {
+        top: -0.25rem;
+        right: -75px;
+      }
+    }
+
+    img:nth-of-type(2) {
+      @include tablet {
+        top: auto;
+        bottom: -1.5rem;
+        left: 0;
+        right: auto;
+      }
+
+      @include laptop {
+        bottom: -0.5rem;
+      }
+    }
+  }
+
+  .performance,
+  .cro {
+    padding: 3rem 0rem;
+
+    .content {
+      @include tablet {
+        max-width: 975px;
+        margin: 0 auto;
+      }
+
+      .intro {
+        margin-bottom: 3rem;
+
+        @include tablet {
+          @include flexbox(space-between, 1.5rem, flex-start, nowrap);
+        }
+
+        @include laptop {
+          gap: 5rem;
+        }
+
+        .list {
+          margin-top: 3rem;
+
+          @include tablet {
+            width: 35%;
+            min-width: 300px;
+          }
+
+          @include laptop {
+            min-width: 350px;
+          }
+
+          > p {
+            font-weight: 600;
+            color: $colorDark
+          }
+
+          ul {
+            padding-left: 2rem;
+
+            li {
+              padding: 0.5rem 0.5rem 0rem;
+              text-indent: 0.25rem;
+            }
+
+            li::marker {
+              content: url(../img/icons/Check-Square.svg);
+            }
+          }
+        }
+      }
+      
+      .example {
+        @include tablet {
+          @include flexbox(space-between, 1.5rem, flex-start, nowrap);
+        }
+
+        p {
+          text-align: center;
+          font-weight: 600;
+          color: $colorDark;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+
+  .performance {
+    .detailLines:nth-of-type(1) {
+      @include laptop {
+        z-index: -1;
+        width: 100%;
+        top: 60%;
+        left: 68%;
+      }
+    }
+  
+    .detailLines:nth-of-type(2) {
+      @include laptop {
+        width: 80rem;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        top: 60%;
+        left: calc(100% + 3rem);
+      }
+    }
+  }
+
+  .cro {
+    .detailLines {
+      @include laptop {
+        width: 100%;
+        z-index: -1;
+        top: 92%;
+        left: -20%;
+      }
+    }
+  }
+
+  .tableWrapper {
+    width: 110%;
+    overflow: auto;
+    margin-left: -5%;
+    padding: 0 5%;
+  }
+
+  table {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse;
+    margin: 1rem auto 3rem;
+    display: block;
+
+    @include tablet {
+      display: revert;
+      max-width: 100%;
+      background-color: #fff;
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+      -webkit-box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+      -moz-box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+    }
+
+    thead {
+      display: block;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      transform: translate(-1px, -1px);
+
+      @include tablet {
+        display: revert;
+        width: auto;
+        height: auto;
+        transform: translate(0, 0);
+        background-color: #F4FAFF;
+        border-bottom: 1px solid #0065f2;
+        padding: 1.25rem 2rem 1rem;
+      }
+
+      @include tablet {
+        display: revert;
+      }
+
+      th {
+        color: #000;
+      }
+
+      .separators {
+        td {
+          padding: 0;
+          
+          .highlight {
+            background-color: #0065f2;
+            color: #fff;
+            font-weight: 600;
+          }
+        }
+
+        td:nth-of-type(2) div {
+          margin-right: 0.25rem;
+        }
+
+        td:nth-of-type(3) div {
+          margin-left: 0.25rem;
+        }
+      }
+
+      tr:first-child {
+        border-bottom: none;
+      }
+    }
+
+    tr {
+      border-bottom: 2px solid #0065f2;
+      display: block;
+
+      @include tablet {
+        display: revert;
+        border-width: 1px;
+      }
+    }
+
+    tr:last-child {
+      @include tablet {
+        border-bottom: none;
+      }
+    }
+
+    th[scope='col']:first-child {
+      text-align: left;
+    }
+
+    th[scope='row'] {
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 1rem;
+      white-space: nowrap;
+      display: block;
+
+      @include tablet {
+        display: revert;
+      }
+    }
+
+    td {
+      text-align: center;
+      padding-left: 50%;
+      position: relative;
+
+      @include tablet {
+        padding-left: 1rem;
+      }
+    }
+
+    td:before {
+      position: absolute;
+      top: auto;
+      bottom: auto;
+      left: 1rem;
+      width: 45%;
+      text-align: left;
+      font-weight: 600;
+      color: #000;
+    }
+
+    td:nth-of-type(1):before { 
+      content: "% Increase"; 
+
+      @include tablet {
+        content: "";
+      }
+    }
+    td:nth-of-type(2):before { 
+      content: "Original";  
+
+      @include tablet {
+        content: "";
+      }
+    }
+    td:nth-of-type(3):before {
+      content: "New";  
+
+      @include tablet {
+        content: "";
+      }
+    }
+    td:nth-of-type(4):before { 
+      content: "% Increase"; 
+
+      @include tablet {
+        content: "";
+      }
+    }
+    td:nth-of-type(5):before { 
+      content: "Original";  
+
+      @include tablet {
+        content: "";
+      }
+    }
+    td:nth-of-type(6):before {
+      content: "New";  
+
+      @include tablet {
+        content: "";
+      }
+    }
+
+    tbody {
+      display: block;
+
+      @include tablet {
+        display: revert;
+      }
+
+      tr{
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+        -webkit-box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+        -moz-box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
+        margin-bottom: 2rem;
+        overflow: hidden;
+
+        @include tablet {
+          border-radius: 0;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+        }
+
+        th {
+          font-weight: 600;
+          color: #fff;
+          background-color: #0065f2;
+          white-space: wrap;
+  
+          @include tablet {
+            font-weight: 400;
+            font-size: 1rem;
+            background-color: #fff;
+            white-space: nowrap;
+          }
+        }
+
+        th:first-child {
+          background-color: #F4FAFF;
+          font-size: 1.25rem;
+          color: #000;
+
+          @include tablet {
+            background-color: #fff;
+          }
+        }
+      }
+
+      tr:last-child th {
+        padding: 1rem;
+
+        @include tablet {
+          padding: 1rem 1rem 2rem;
+        }
+      }
+
+      tr:last-child td {
+        padding: 1rem 1rem 1rem 50%;
+
+        @include tablet {
+          padding: 1rem 1rem 2rem;
+        }
+      }
+
+      .highlight {
+        background-color: rgba(26, 172, 6, 0.1);
+        color: #1AAC06;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .table table {
+    th[scope='row']:not(:first-child) {
+      text-align: center;
+      padding: 0.25rem;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  .final {
+    background: linear-gradient(#F4FAFF, #fff);
+    padding: 3rem 0rem;
+
+    h3 {
+      margin: 3rem 0 1.5rem;
+    }
+
+    ul {
+      margin-bottom: 5rem;
+      list-style: none;
+
+      @include tablet {
+        @include flexbox(space-between, 1.5rem, flex-start, nowrap);
+      }
+
+      @include desktop {
+        justify-content: flex-start;
+      }
+
+      li {
+        @include tablet {
+          width: 30%;
+        }
+
+        @include desktop {
+          width: 25%;
+        }
+        
+        h4 {
+          color: #1AAC06;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .performance {
+    .myContainer > img {
+      margin-bottom: 2rem;
+    }
+  }
+}

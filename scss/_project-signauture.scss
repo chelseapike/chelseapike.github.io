@@ -1,14 +1,23 @@
 #projectSignauture {
   .headerBG {
-    background-image: url('../img/portfolio/Project-Signature/Header_Background-Overlay.png');
+    background-image: url('../img/portfolio/Project-Signature/Header_Background-Overlay.webp');
     background-size: 250%;
     background-position: 35% 55%;
     background-repeat: no-repeat;
-    height: 90%;
+    height: 110%;
 
     @include tablet{
       background-size: cover;
       background-position: center center;
+      height: 110%;
+    }
+
+    @include laptop {
+      height: 100%;
+    }
+
+    #headerContent > p {
+      color: white;
     }
   }
 
@@ -61,6 +70,15 @@
         img {
           width: 48%;
         }
+      }
+    }
+
+    .detailLines {
+      @include laptop {
+        z-index: -1;
+        width: 100%;
+        top: 80%;
+        left: 68%;
       }
     }
   }
@@ -199,6 +217,17 @@
         height: 50%;
       }
     }
+
+    .detailLines {
+      @include laptop {
+        width: 100rem;
+        z-index: -1;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        top: 60%;
+        left: 10%;
+      }
+    }
   }
 
   .signatureTradeShow {
@@ -239,6 +268,26 @@
           transform: scale(115%);
           transform-origin: bottom left;
         }
+      }
+    }
+
+    .detailLines:nth-of-type(1) {
+      @include laptop {
+        width: 100rem;
+        z-index: -1;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        top: -50%;
+        left: 10%;
+      }
+    }
+
+    .detailLines:nth-of-type(2) {
+      @include laptop {
+        z-index: -1;
+        width: 100%;
+        top: 85%;
+        left: 50%;
       }
     }
   }

@@ -9,11 +9,15 @@
 html {
   scroll-behavior: smooth;
 }
+main {
+  overflow: hidden;
+  max-width: 100vw;
+}
 
 h1,
 .styledH1 {
   @include text($fontPrimary, 2.25rem, 700, 2.875rem, #000);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   position: relative;
   z-index: 1;
 
@@ -21,12 +25,16 @@ h1,
     font-size: 4.5rem;
     line-height: 5.25rem;
   }
+
+  @include laptop {
+    font-size: 4.5rem;
+  }
 }
 
 h2,
 .styledH2 {
   @include text($fontPrimary, 3rem, 700, 3rem, #000);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 
   @include tablet {
     font-size: 3.25rem;
@@ -37,17 +45,17 @@ h2,
 h3,
 .styledH3 {
   @include text($fontPrimary, 1.75rem, 600, 2.25rem, #000);
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 h4,
 .styledH4 {
-  @include text($fontSecondary, 1.5rem, 500, 1.875rem, #000);
-  margin-bottom: 15px;
+  @include text($fontSecondary, 1.25rem, 400, 1.875rem, #000);
+  margin-bottom: 1rem;
 }
 
 body {
-  @include text($fontSecondary, 1rem, 400, 1.5rem, $colorBody);
+  @include text($fontSecondary, 1rem, 300, 1.5rem, $colorBody);
 
   @include tablet {
     font-size: 1.125rem;
@@ -55,7 +63,7 @@ body {
   }
 
   p {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -75,22 +83,22 @@ a,
   background-color: $colorDark;
   text-align: center;
   display: inline-block;
-  border-radius: 10px;
-  padding: 20px 30px;
+  border-radius: 0.625rem;
+  padding: 1.25rem 2rem;
   white-space: nowrap;
   border: none;
   transition: transform 0.3s ease-in-out;
 
   @include laptop {
-    padding: 15px 30px;
+    padding: 1rem 2rem;
   }
   
   svg {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     opacity: 0;
-    transform: translateX(-10px);
-    transition: transform 0.3s, opacity 0.3s ease-in-out,
+    transform: translateX(-0.625rem);
+    transition: transform 0.3s,
       opacity 0.3s ease-in-out,
       width 0.3s ease-in-out,
       height 0.3s ease-in-out;
@@ -99,17 +107,18 @@ a,
   &:hover,
   &:focus-visible {
     @include laptop {
-      @include flexbox(center, 8px, center, nowrap);
+      @include flexbox(center, 0.5rem, center, nowrap);
       display: inline-flex;
-      transform: scale(1.1); 
+      transform: scale(1.02);
+      padding-right: 1.5rem;
     }
 
     svg {
       @include laptop {
         width: auto;
-        height: 12px;
+        height: 0.75rem;
         opacity: 1;
-        transform: translate(0px, -1px);
+        transform: translate(0, -1px);
       }
     }
   }
@@ -126,10 +135,10 @@ img {
 }
 
 header {
-  padding-top: 80px;
+  padding-top: 5rem;
 
   @include tablet {
-    padding-top: 100px;
+    padding-top: 6.25rem;
   }
 }
 
@@ -137,11 +146,11 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 0.625rem;
   position: relative;
 
   @include tablet {
-    padding: 0 20px;
+    padding: 0 1.25rem;
   }
 }
 
@@ -150,7 +159,7 @@ header {
 }
 
 .cornerRadius {
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .boxShadow {
@@ -159,13 +168,69 @@ header {
   -moz-box-shadow: rgba(16, 19, 14, 0.2) 0 2px 8px;
 }
 
+.detailLines {
+  display: none;
+
+  @include laptop {
+    display: block;
+    position: absolute;
+    border: 1px solid $colorMain;
+  }
+}
+
+a.project {
+  display: block;
+  border: 1px solid $colorMain80;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  transition: border-color 300ms ease-in-out;
+  width: 100%;
+
+  .imgDiv {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border: 1px solid $colorMain80;
+
+    img {
+      width: 100%;
+      transition: transform 300ms;
+    }
+  }
+
+  .categoryTagsDiv {
+    @include flexbox( flex-start, 0.625rem, center, wrap);
+    width: 100%;
+    margin: 0.625rem 0.625rem 0;
+
+    @include laptop {
+      flex-wrap: nowrap;
+    }
+  }
+
+  h3 {
+    margin: 1rem 0.625rem 0.625rem;
+  }
+}
+
+a.project:hover {
+  border-color: $colorMain;
+
+  img {
+    transform: scale(1.1);
+  }
+}
+
 .categoryTag {
-  padding: 3px 12px;
+  padding: 2px 0.75rem;
   position: relative;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  font-weight: 400;
 
   p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     white-space: nowrap;
     text-transform: uppercase;
     position: relative;
@@ -173,7 +238,7 @@ header {
   }
 
   .categoryTagsBorder {
-    border-radius: 30px;
+    border-radius: 2rem;
     border: 0.5px solid rgba(255, 255, 255, 0.25);
     position: absolute;
     top: 0%;
@@ -183,7 +248,7 @@ header {
   }
 
   .categoryTagsBG {
-    border-radius: 30px;
+    border-radius: 2rem;
     background-image: radial-gradient(circle at 60% 100%, rgba(255, 255, 255, 0.75), rgba(154, 160, 149, 0.75));
     filter: blur(1px);
     position: absolute;
@@ -195,12 +260,12 @@ header {
 }
 
 .author {
-  @include flexbox(flex-start, 15px, center, nowrap);
+  @include flexbox(flex-start, 1rem, center, nowrap);
   width: 100%;
   img {
-      width: 60px;
-      height: 60px;
-      border-radius: 5px;
+      width: 3.75rem;
+      height: 3.75rem;
+      border-radius: 0.25rem;
   }
 
   p {
@@ -209,31 +274,36 @@ header {
 
   .name {
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0.25rem;
   }
 }
 
-#projectContact {
+#contact {
   position: relative;
-  padding: 60px 0px 100px;
+  padding: 3.75rem 0 6.25rem;
 
   .myContainer {
     text-align: center;
 
     @include tablet {
       text-align: left;
-      @include flexbox(center, 0px, flex-end, wrap);
+      @include flexbox(center, 0, flex-end, wrap);
     }
 
     h2 {
-
       @include tablet {
         max-width: 400px;
+        transform: translateX(2rem);
+
       }
     }
 
     > p {
-      margin-bottom: 25px;
+      margin-bottom: 2rem;
+
+      @include tablet {
+        transform: translateX(-4rem);
+      }
     }
 
     #contactBtnsDiv {
@@ -260,6 +330,10 @@ header {
 #relatedProjects {
   position: relative;
 
+  @include desktop {
+    margin-top: -1px;
+  }
+
   h2 {
     color: #fff;
     text-align: center;
@@ -276,6 +350,7 @@ header {
 
     @include laptop {
       height: 50%;
+      top: -1px;
     }
   }
 }

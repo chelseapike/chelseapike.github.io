@@ -2,7 +2,7 @@
     position: relative;
 
     @include laptop {
-        padding: 120px 0;
+        padding: 7.5rem 0;
     }
 
     .headerBG {
@@ -24,17 +24,37 @@
     }
 
     .myContainer {
+        @include tablet {
+            @include flexbox(space-between, 1rem, center, wrap);
+        }
+
         @include laptop {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            gap: 2rem;
+        }
+
+        #headerContent {
+            @include laptop {
+                width: 60%;
+                max-width: 600px;
+            }
+        }
+
+        > img {
+            @include tablet {
+                order: 3;
+            }
+
+            @include laptop {
+                order: 2;
+                width: 100%;
+            }
         }
     }
 
     
     #projectCTAs {
         width: 100%;
-        @include flexbox(space-between, 10px, $wrap:wrap);
+        @include flexbox(space-between, 0.625rem, $wrap:wrap);
       
         @include tablet {
           flex-wrap: nowrap;
@@ -48,7 +68,7 @@
         .button {
           width: 100%;
           
-          @include laptop {
+          @include tablet {
             width: auto;
           }
         }
@@ -56,15 +76,24 @@
 }
 
 ul.categoryTagsDiv {
-    @include flexbox(flex-start, 10px, center, wrap);
+    @include flexbox(flex-start, 0.625rem, center, wrap);
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+
+    .categoryTag {
+        padding: 0 0.75rem;
+        font-size: 0.7rem;
+
+        p {
+            margin: -2px 0;
+        }
+    }
 }
 
 .projectMainImg {
     color: gray;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 
     @include laptop {
         grid-row: span 2;
@@ -72,11 +101,11 @@ ul.categoryTagsDiv {
 }
 
 #creativeBreif {
-    padding: 60px 0;
+    padding: 3.75rem 0;
 
     .myContainer{
         @include laptop {
-            @include flexbox(space-between, 60px, flex-start, nowrap);
+            @include flexbox(space-between, 3.75rem, flex-start, nowrap);
         }   
     }
 
@@ -87,15 +116,15 @@ ul.categoryTagsDiv {
     }
 
     #projectDetails {
-        margin: 60px 0;
+        margin: 3.75rem 0;
 
         @include tablet {
-            @include flexbox(space-between, 30px, flex-start, nowrap);
-            margin-top: 0px;
+            @include flexbox(space-between, 2rem, flex-start, nowrap);
+            margin-top: 0;
         }
 
         > div {
-            margin: 0px 0px 2rem;
+            margin: 0 0 2rem;
 
             @include tablet {
                 width: 50%;
@@ -110,7 +139,7 @@ ul.categoryTagsDiv {
     }
 
     .projectTools {
-        @include flexbox(center, 15px, flex-start, wrap);
+        @include flexbox(center, 1rem, flex-start, wrap);
         list-style: none;
         text-align: center;
         padding-left: 0;
@@ -133,16 +162,16 @@ ul.categoryTagsDiv {
     }
 
     .projectToolsIcon {
-        width: 50px;
-        height: 50px;
+        width: 3rem;
+        height: 3rem;
         flex-shrink: 0;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
 }
 
 #process {
     background-color: $colorDark;
-    padding: 60px 0;
+    padding: 3.75rem 0;
     
     h2 {
         color: #ffffff;
@@ -160,9 +189,9 @@ ul.categoryTagsDiv {
 
     li {
         list-style: none;
-        @include flexbox(center, 0px, flex-end, wrap);
+        @include flexbox(center, 0, flex-end, wrap);
         background-color: rgb(255 255 255 / 35%);
-        padding: 10px 15px;
+        padding: 0.625rem 1rem;
         background-image: radial-gradient(rgba(255, 255, 255, 0.75) 0%, rgba(154, 160, 149, 0.4) 500%);
 
         @include laptop {
@@ -171,7 +200,7 @@ ul.categoryTagsDiv {
 
         p {
             width: 100%;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             order: 2;
         }
 
@@ -181,20 +210,24 @@ ul.categoryTagsDiv {
 
         img {
             order: 1;
-            width: 60px;
-            height: 60px;
-            margin: 0 0 -20px auto;
-
+            width: 3.75rem;
+            height: 3.75rem;
+            margin: 0 0 -1.25rem auto;
+            
+            @include laptop {
+                width: 5.5rem;
+                height: 5.5rem;
+            }
         }
     }
 }
 
 #results {
-    padding: 60px 0;
+    padding: 3.75rem 0;
 
     .myContainer {
         @include tablet {
-            @include flexbox(space-between, 60px, flex-start, nowrap);
+            @include flexbox(space-between, 3.75rem, flex-start, nowrap);
         }
     }
 
@@ -206,11 +239,11 @@ ul.categoryTagsDiv {
     }
     
     #projectResultsDescription {
-        margin-top: 60px;
+        margin-top: 3.75rem;
 
         @include tablet {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 1.25rem;
         }
     }
 
@@ -219,10 +252,10 @@ ul.categoryTagsDiv {
 
 #creativeBreif ul,
 #results ul {
-    padding-left: 25px;
+    padding-left: 1.5rem;
 
     li {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 }
 
@@ -255,8 +288,8 @@ ul.categoryTagsDiv {
         margin-top: 2rem;
 
         img {
-            width: 60px;
-            height: 60px;
+            width: 3.75rem;
+            height: 3.75rem;
             border-radius: 0.5rem;
             object-fit: cover;
             flex-shrink: 0;

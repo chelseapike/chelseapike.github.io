@@ -1,0 +1,823 @@
+#header {
+  padding: 5rem 0;
+  position: relative;
+
+  @include tablet {
+    padding-bottom: 0;
+    margin-bottom: -130px;
+  }
+
+  @include laptop {
+    margin-bottom: -207px;
+  }
+
+  .myContainer.index {
+    @include tablet {
+      @include flexbox(space-between, 0.625rem, flex-start, nowrap);
+    }
+  }
+
+  .content {
+    @include tablet {
+      width: 50%;
+    }
+
+    @include laptop {
+      position: relative;
+    }
+
+    h1 {
+      font-size: 5rem;
+      line-height: 4.5rem;
+      position: relative;
+
+      @include tablet {
+        font-size: 7rem;
+        line-height: 5.5rem;
+      }
+
+      @include laptop {
+        font-size: 7.5rem;
+        line-height: 6rem;
+      }
+
+      @include desktop {
+        font-size: 9rem;
+        line-height: 7rem;
+      }
+  
+      span {
+        font-size: 1rem;
+        color: $colorMain;
+        font-weight: 600;
+        position: absolute;
+        top: -2.5rem;
+        left: 4.5rem;
+
+        @include tablet {
+          left: 7rem;
+        }
+
+        @include laptop {
+          top: -3rem;
+          left: 7.5rem;
+        }
+
+        @include desktop {
+          left: 9.5rem;
+        }
+      }
+    }
+
+    .description {
+      @include laptop {
+        width: 100%;
+        max-width: 400px;
+        position: absolute;
+        top: 8.75rem;
+        left: 16rem;
+      }
+
+      @include desktop {
+        top: 10.5rem;
+        left: 19rem;
+      }
+    }
+  }
+
+  .bgDiv {
+    background-color: $colorDark;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    height: 21%;
+  }
+}
+
+#headshot {
+  display: none;
+
+  @include tablet {
+    display: inline;
+    max-width: 40%;
+  }
+}
+
+#headerCTAs {
+  width: 100%;
+  @include flexbox(space-between, 0.625rem, $wrap:wrap);
+
+  @include tablet {
+    flex-wrap: nowrap;
+  }
+
+  @include laptop {
+    justify-content: center;
+    padding-left: 6.25rem;
+    width: 125%;
+  }
+
+  .button {
+    width: 100%;
+
+    @include tablet {
+      width: 50%;
+      padding: 1.25rem 1rem;
+    }
+  }
+
+  .button:last-child {
+    border: 1px solid #fff;
+  }
+}
+
+#preview {
+  position: relative;
+  padding-bottom: 3.75rem;
+  margin-top: -1px;
+
+  @include tablet {
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  @include laptop {
+      padding-top: 6.25rem;
+  }
+
+  ul {
+    list-style-type: none;
+    @include flexbox(flex-start, 0.625rem 0, center, wrap);
+    margin: 0 auto 2rem;
+    color: #fff;
+
+    @include laptop {
+      margin-bottom: -2rem;
+    }
+  
+    li:not(:last-child):after {
+      content: '>';
+      padding: 0 0.625rem;
+    }
+  }
+
+  .previewImgsDiv {
+    @include flexbox(space-between, 0.625rem, flex-end, wrap);
+
+    @include laptop {
+      flex-wrap: nowrap;
+    }
+
+    .previewImg {
+      width: 30%;
+      flex-grow: 1;
+      height: auto;
+
+      @include tablet {
+        width: 39%;
+      }
+
+      @include laptop {
+        width: 24%;
+      }
+
+      &.main {
+        width: 60%;
+        flex-grow: 2;
+        height: auto;
+
+        @include tablet {
+          width: 59%;
+        }
+
+        @include laptop {
+          width: 49%;
+          order: 3;
+        }
+      }
+    }
+
+    .previewImg:nth-child(1) {
+      order: 3;
+      flex-grow: 0;
+      margin-left: 35%;
+
+      @include tablet {
+        margin-left: 41%;
+      }
+
+      @include laptop {
+        margin-left: 0;
+        order: 1;
+      }
+    }
+
+    .previewImg:nth-child(2) {
+      transform: translateY(2rem);
+
+      @include tablet {
+        transform: translateY(7.5rem);
+      }
+
+      @include laptop {
+        transform: translateY(0);
+        order: 2;
+      }
+    }
+  }
+
+  .bgDiv {
+    background-color: $colorDark;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    height: 100%;
+  }
+
+  .detailLines:nth-of-type(1) {
+    @include laptop {
+      width: 100%;
+      top: 0.75rem;
+      right: 100%;
+    }
+  }
+
+  .detailLines:nth-of-type(2) {
+    @include laptop {
+      width: 43rem;
+      transform: rotate(90deg);
+      transform-origin: 0 0;
+      top: 0.75rem;
+      left: -3rem;
+    }
+  }
+}
+
+#about {
+  padding: 5rem 0 2rem;
+  margin-top: -3rem;
+
+  .myContainer {
+    @include tablet {
+      @include flexbox(space-between, 5rem, baseline, nowrap);
+    }
+
+    @include laptop {
+      justify-content: flex-end;
+      gap: 18%;
+    }
+  }
+
+  div:nth-child(1) {
+    @include tablet {
+      padding-top: 1rem;
+    }
+
+    @include laptop {
+      padding-left: 5%;
+    }
+  }
+
+  .calloutsDiv {
+    width: 100%;
+    @include flexbox(flex-start, 3.75rem, flex-start, nowrap);
+    margin: 2rem auto 3.75rem;
+
+    .styledH3 {
+      display: block;
+    }
+  }
+  
+  .button {
+    width: 100%;
+    margin-top: 2rem;
+
+    @include tablet {
+      width: auto;
+    }
+  }
+
+  .detailLines:nth-of-type(1) {
+    @include laptop {
+      z-index: -1;
+      width: 100%;
+      bottom: 1.25rem;
+      left: 68%;
+    }
+  }
+
+  .detailLines:nth-of-type(2) {
+    @include laptop {
+      width: 65rem;
+      transform: rotate(90deg);
+      transform-origin: 0 0;
+      bottom: 1.25rem;
+      left: calc(100% + 3rem);
+    }
+  }
+}
+
+#portfolio {
+  padding-top: 5rem;
+  margin: 1.25rem auto;
+
+  .headerDiv {
+    @include laptop {
+      @include flexbox(flex-start, 3.75rem, flex-end, nowrap);
+    }
+  }
+
+  h2 {
+    @include laptop {
+      margin-bottom: 0.625rem;
+    }
+  }
+
+  .detailLines {
+    @include laptop {
+      z-index: -1;
+      width: 100%;
+      bottom: 16rem;
+      left: -90%;
+    }
+  }
+}
+
+#portfolioProjects {
+  margin: 3.75rem auto;
+
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @include tablet {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+#resume {
+  padding: 5rem 0;
+  margin-top: 3rem auto;
+
+  .headerDiv {
+    margin-bottom: 2rem;
+
+    @include laptop {
+      @include flexbox(flex-start, 3.75rem, flex-start, nowrap);
+    }
+  }
+
+  .companyList {
+    @include flexbox(space-between, 0, center, wrap);
+    padding: 1.25rem 0;
+    position: relative;
+    cursor: pointer;
+
+    @include tablet {
+      padding: 1rem 1rem 0;
+      border-radius: 0.5rem;
+    }
+
+
+    @include laptop {
+      align-items: flex-start;
+    }
+
+    h3 {
+      width: 90%;
+
+      @include tablet {
+        width: 100%;
+      }
+
+      @include laptop {
+        width: 30%;
+        gap: 6.25rem;
+      }
+    }
+    
+    .jobDetails {
+      width: 100%;
+
+      @include tablet {
+        width: 100%;
+      }
+
+      @include laptop {
+        width: 70%;
+      }
+
+      .positionHeading {
+        @include flexbox(flex-start, 0, flex-start, wrap);
+        flex-direction: column;
+
+        @include tablet {
+          flex-direction: row;
+          gap: 1.25rem;
+          justify-content: space-between;
+        }
+
+        > h4 {
+          margin-bottom: 0.25rem;
+        }
+
+        > p {
+          font-size: 0.9rem;
+          margin-bottom: 0;
+
+          @include laptop {
+            margin-right: 2rem;
+          }
+        }
+      }
+
+      .expandDetails {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 300ms ease-in-out;
+
+        > .positionHeading {
+          margin-top: 1rem;
+
+          > p {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      .expandDetails.active {
+        max-height: 5000px;
+      }
+    }
+
+    img {
+      align-self: flex-start;
+      transform-origin: center;
+      transform: rotateZ(90deg);
+      padding: 1rem 1rem 0;
+      padding: 0 1rem;
+      transition: transform 300ms ease-in-out;
+      position: absolute;
+      top: 2rem;
+      right: 0;
+
+      @include tablet {
+        top: 0.75rem;
+      }
+
+      @include laptop {
+        top: 1.3rem;
+      }
+    }
+
+    hr {
+      width: 100%;
+      border-bottom: 1px solid $colorMain80;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .companyList:hover {
+    @include tablet {
+      background-color: $colorMain80;
+    }
+  }
+
+  .companyList:hover.active {
+    background-color: #fff;
+  }
+
+  .positionList {
+    margin-bottom: 3.75rem;
+
+    li {
+      list-style-type: disc;
+      display: list-item;
+      margin: 0 0 1rem 2rem;
+
+      ::before {
+        content: '•';
+      }
+    }
+  }
+
+  .positionList:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#shout-outs {
+  padding-top: 5rem;
+  margin: -3rem auto 3.75rem;
+
+  .myContainer {
+      padding: 0;
+
+      @include laptop {
+          padding: 0 1.25rem;
+      }
+  }
+
+  h2 {
+      padding: 0 1.25rem;
+      text-align: center;
+  }
+}
+
+#sliderDiv {
+  background-color: $colorDark;
+  padding: 2.5rem 1.25rem;
+  overflow: hidden;
+
+  @include tablet {
+      padding: 3.75rem 2rem 2.5rem;
+  }
+
+  @include laptop {
+      border-radius: 2rem;
+  }
+
+  .slide {
+      position: relative;
+      display: none;
+
+      @include laptop {
+          width: 90%;
+          max-width: 950px;
+          margin: 0 auto;
+          padding-left: 3rem;
+      }
+
+      > hr {
+        display: none;
+
+        @include laptop {
+          display: block;
+          border: 1px solid $colorMain;
+          transform: rotate(90deg);
+          transform-origin: 0 0;
+          position: absolute;
+          width: 110%;
+          top: -12%;
+          bottom: auto;
+          left: -0.15rem;
+          right: auto;
+        }
+
+        @include desktop {
+          
+        }
+      }
+
+      .logoDiv {
+          width: auto;
+          height: auto;
+          position: absolute;
+          top: -1.25rem;
+          right: 0;
+
+          @include tablet {
+              top: -1.5rem;
+          }
+
+          @include laptop {
+            height: auto;
+            width: auto;
+            top: 110%;
+            bottom: auto;
+            left: 0;
+            right: auto;
+            transform: rotate(-90deg);
+            transform-origin: left;
+            background-color: #10130E;
+            padding: 0.75rem;
+          }
+
+          .logo {
+              transform-origin: right center;
+              transform: scale(0.7);
+
+              @include tablet {
+                  transform: scale(1);
+              }
+          }
+      }
+
+      .quotemarks {
+          @include text($fontPrimary, 15rem, 400, 10rem, transparent);
+          -webkit-text-stroke-width: 3px;
+          -webkit-text-stroke-color: $colorMain;
+          margin: 0.625rem 0 -6rem -1.5rem;
+
+          @include laptop {
+              margin: -0.625rem 0 -8rem 210px;
+              transform: scale(1.2);
+          }
+      }
+
+      .quote {
+          padding: 2.5rem 1rem 2rem;
+          background-color: #fff;
+          text-align: left;
+          margin-bottom: 2rem;
+
+          @include tablet {
+              padding: 2.5rem 1.25rem 2rem;
+          }
+
+          @include laptop {
+              margin-left: 130px;
+              padding: 2.5rem 2rem 2.5rem 11.25rem;
+              min-height: 380px;
+          }
+      }
+
+      .author {
+          color: #fff;
+
+          @include laptop {
+              align-items: flex-end;
+              position: absolute;
+              bottom: -5rem;
+              left: 3rem;
+          }
+
+          img {
+              object-fit: cover;
+
+              @include laptop {
+                  width: 283px;
+                  height: 378px;
+                  border-radius: 1rem;
+              }
+          }
+      }
+  }
+
+  .slide.fade {
+      animation-name: sliderFade;
+      animation-duration: 1.5s;
+  }
+
+  .sliderNav {
+      text-align: center;
+      margin-top: 3.75rem;
+      position: relative;
+
+      @include laptop {
+          text-align: right;
+          width: 90%;
+          max-width: 950px;
+          margin: 7rem auto 0;
+      }
+
+      .dot {
+          cursor: pointer;
+          height: 1rem;
+          width: 1rem;
+          margin: 0 0.25rem;
+          background-color: #fff;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          position: relative;
+          z-index: 1;
+      }
+
+      .active {
+          background-color: $colorMain;
+          transform: scale(1.5);
+      }
+
+      .dot:hover {
+          background-color: $colorMain;
+      }
+
+      hr {
+          display: none;
+
+          @include laptop {
+              display: block;
+              border: 1px solid $colorMain;
+              position: absolute;
+              top: 40%;
+              left: -3px;
+              right: 0;
+              width: 100vw;
+          }
+      }
+  }
+}
+
+@keyframes sliderFade {
+  from {opacity: 0.3;}
+  to {opacity: 1;}
+}
+
+#resumeCTAs {
+  width: 100%;
+  margin: 2rem 0 0 auto;
+  @include flexbox(flex-end, 0, center, nowrap);
+
+  .button {
+    width: 100%;
+
+    @include tablet {
+      width: auto;
+    }
+  }
+}
+
+#lets-connect {
+  padding: 3.75rem 0;
+  position: relative;
+
+  @include tablet {
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto 2rem;
+
+    @include tablet {
+      max-width: 650px;
+    }
+
+    @include tablet {
+      max-width: 850px;
+    }
+  }
+
+  .bgDiv {
+    background-color: $colorDark;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    z-index: -2;
+    height: 43%;
+
+    @include tablet {
+      height: 25%;
+    }
+  }
+}
+
+#contactBtnsDiv {
+  @include tablet {
+    @include flexbox(space-between, 0.625rem, stretch, nowrap);
+  }
+
+  @include laptop {
+    justify-content: center;
+  }
+  
+  .button {
+    @include flexbox(center, 0.75rem, center, nowrap);
+    padding: 0.625rem 1.25rem;
+    border: 1px solid $colorDark;
+    background-color: #fff;
+    width: 100%;
+    color: $colorBody;
+    text-align: left;
+
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.05);
+    }
+
+    @include tablet {
+      width: 50%;
+    }
+
+    @include laptop {
+      width: auto;
+    }
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      flex-shrink: 0;
+    }
+
+    h3 {
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .button:first-child {
+    margin-bottom: 1rem;
+    
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -2,19 +2,42 @@
   .headerBG {
     background-image: url('../img/portfolio/BICSI/Header_Graphic-Element.svg');
     background-size: auto;
-    background-position: center bottom;
+    background-position: center bottom 100%;
     background-repeat: no-repeat;
     background-color: #fff;
 
     @include tablet {
-      background-position: center 3%;
+      background-position: center 10%;
     }
 
+    @include laptop {
+      background-position: center 25%;
+    }
   }
 
   #projectHeader {
     @include laptop {
-      padding: 120px 0px;
+      padding: 7.5rem 0;
+    }
+
+    h1 span {
+      display: inline-block;
+    }
+  }
+
+  .projectMainImg {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto 2rem;
+
+    @include laptop {
+      max-width: 500px;
+      margin: -25rem 0 0 30rem;
+      order: 3 !important;
+    }
+
+    @include desktop {
+      margin-left: 42rem;
     }
   }
 
@@ -34,10 +57,10 @@
       }
 
       @include laptop {
-        max-width: 1200px;
+        max-width: 1200;
         margin: 2rem auto;
         width: 100%;
-        padding: 0 20px;
+        padding: 0 20;
         flex-wrap: nowrap;
         gap: 0;
         justify-content: center;
@@ -103,6 +126,10 @@
           order: 1;
           margin-bottom: 3rem;
         }
+
+        @include laptop {
+          position: relative;
+        }
   
         .frame{
           border: 1px solid $colorDark;
@@ -112,6 +139,24 @@
   
           img {
             border: 1px solid $colorDark;
+          }
+        }
+
+        .detailLines:nth-of-type(1) {
+          @include laptop {
+            width: 100%;
+            top: 15%;
+            right: 100%;
+          }
+        }
+      
+        .detailLines:nth-of-type(2) {
+          @include laptop {
+            width: 60rem;
+            transform: rotate(90deg);
+            transform-origin: 0 0;
+            top: 15%;
+            left: -40%;
           }
         }
       }
@@ -224,6 +269,15 @@
         @include tablet {
           width: 38%;
         }
+      }
+    }
+
+    .detailLines {
+      @include laptop {
+        width: 100%;
+        z-index: -1;
+        top: 38%;
+        left: 50%;
       }
     }
   }
